@@ -1,0 +1,11 @@
+# Old wireframe / reference material — not part of the real site
+camino_wireframe/
+docs_pages/
+hero-photo-yellow-fix*.jpg
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Local tooling
+.claude/
