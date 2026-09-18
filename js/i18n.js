@@ -1,12 +1,14 @@
 // Simple i18n: text lives in lang/*.json, HTML elements are tagged with data-i18n.
-// The static HTML already contains the French text as a fallback, so this
-// degrades gracefully if the fetch fails — the page still reads correctly.
+// The static HTML already contains the Spanish text as a fallback (most
+// clients are in Madrid, and this is also what Google indexes by default),
+// so this degrades gracefully if the fetch fails — the page still reads
+// correctly.
 (function () {
   // Hostinger's CDN caches static files for 7 days — bump this on every
   // content change so lang/*.json is fetched fresh instead of from cache.
-  const ASSET_VERSION = '5';
+  const ASSET_VERSION = '6';
   const STORAGE_KEY = 'camino_lang';
-  const DEFAULT_LANG = 'fr';
+  const DEFAULT_LANG = 'es';
   // Add 'en' here once its lang/en.json file is translated — that alone
   // is enough to turn the FR/ES/EN switcher on for it too.
   const AVAILABLE_LANGS = ['fr', 'es'];
@@ -51,6 +53,7 @@
     document.querySelectorAll('.lang-switch [data-lang]').forEach(btn => {
       btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
     });
+    document.documentElement.setAttribute('lang', lang);
   }
 
   function loadLang(lang) {
@@ -60,7 +63,7 @@
         applyTranslations(dict);
         setActiveLangButton(lang);
       })
-      .catch(() => { /* static French markup already shown — nothing to do */ });
+      .catch(() => { /* static Spanish markup already shown — nothing to do */ });
   }
 
   window.setCaminoLang = function (lang) {
