@@ -1,24 +1,28 @@
-# Old wireframe / reference material — not part of the real site
-camino_wireframe/
-docs_pages/
-hero-photo-yellow-fix*.jpg
+# This Dropbox folder is shared with non-site material (brand docs, photo
+# references, inspiration...). Rather than list every such file/folder to
+# exclude (fragile — anything new added later would leak into git), we
+# ignore everything by default and only allow the real site files through.
 
-# Original source documents kept in this Dropbox folder for reference —
-# not part of the deployed site (the PDF alone is ~19MB)
-Accompagnement.jpg
-Camino Creighton Manual*.png
-Camino Creighton Manual.pdf
-Creighton.jpg
-FAQ Método Creighton.pdf
-Femme qui travaille au bureau.jpeg
-Método Creighton FertilityCare™ - @Camino.creighton.pdf
-Napro.png
-Photo 1.jpg
-Profil pro.jpg
+/*
 
-# OS junk
-.DS_Store
-Thumbs.db
+!/.gitignore
+!/README.md
+!/index.html
+!/methode.html
+!/accompagnement.html
+!/apropos.html
+!/contact.html
+!/contact.php
+!/merci.html
 
-# Local tooling
-.claude/
+!/css/
+!/css/**
+
+!/js/
+!/js/**
+
+!/lang/
+!/lang/**
+
+!/images/
+!/images/**
