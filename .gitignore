@@ -13,6 +13,7 @@
 !/apropos.html
 !/contact.html
 !/contact.php
+!/mail-config.example.php
 !/merci.html
 !/robots.txt
 !/sitemap.xml
@@ -29,3 +30,10 @@
 
 !/images/
 !/images/**
+
+!/lib/
+!/lib/**
+
+# mail-config.php holds a real Hostinger mailbox password — it is created
+# directly on the server via File Manager, never through git. The allowlist
+# above already excludes it by default; this line just makes that explicit.
