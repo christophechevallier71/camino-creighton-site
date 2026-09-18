@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>À propos de Pilar Ramos Beytia | Camino Creighton</title>
-<meta name="description" content="FertilityCare Practitioner certifiée par le Saint Paul VI Institute, Pilar accompagne depuis plus de trois ans les femmes et les couples dans l'apprentissage de la méthode Creighton, à Madrid et en visioconférence.">
+<title data-i18n="meta.apropos_title">À propos de Pilar Ramos Beytia | Camino Creighton</title>
+<meta name="description" data-i18n-content="meta.apropos_description" content="FertilityCare Practitioner certifiée par le Saint Paul VI Institute, Pilar accompagne depuis plus de trois ans les femmes et les couples dans l'apprentissage de la méthode Creighton, à Madrid et en visioconférence.">
 <link rel="canonical" href="https://caminocreighton.com/apropos.html">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap">
 <link rel="stylesheet" href="css/style.css">
@@ -16,84 +16,98 @@
     <img src="images/logo-horizontal.png" alt="Camino Creighton" style="height:60px; width:auto; display:block;">
   </a>
   <nav class="nav-links">
-    <a href="index.html">Accueil</a>
-    <a href="accompagnement.html">Accompagnement</a>
-    <a href="methode.html">Méthode</a>
-    <a href="apropos.html" class="active">À propos</a>
-    <span class="nav-disabled" aria-disabled="true" title="Bientôt disponible">Ressources</span>
-    <a href="contact.html">Contact</a>
+    <a href="index.html" data-i18n="nav.accueil">Accueil</a>
+    <a href="accompagnement.html" data-i18n="nav.accompagnement">Accompagnement</a>
+    <a href="methode.html" data-i18n="nav.methode">Méthode</a>
+    <a href="apropos.html" class="active" data-i18n="nav.apropos">À propos</a>
+    <span class="nav-disabled" aria-disabled="true" data-i18n="nav.ressources" data-i18n-title="nav.ressources_title" title="Bientôt disponible">Ressources</span>
+    <a href="contact.html" data-i18n="nav.contact">Contact</a>
   </nav>
-  <a href="contact.html" class="btn-primary header-cta-desktop">Prendre rendez-vous</a>
+  <div class="lang-switch lang-switch-header">
+    <button class="lang-btn active" data-lang="fr">FR</button>
+    <span class="lang-sep">·</span>
+    <span class="lang-btn-disabled" data-i18n-title="nav.lang_es_title" title="Bientôt disponible en espagnol">ES</span>
+    <span class="lang-sep">·</span>
+    <span class="lang-btn-disabled" data-i18n-title="nav.lang_en_title" title="Bientôt disponible en anglais">EN</span>
+  </div>
+  <a href="contact.html" class="btn-primary header-cta-desktop" data-i18n="nav.rdv">Prendre rendez-vous</a>
   <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
   </button>
 </header>
 <nav class="mobile-menu" id="mobile-menu" hidden>
-  <a href="index.html">Accueil</a>
-  <a href="accompagnement.html">Accompagnement</a>
-  <a href="methode.html">Méthode</a>
-  <a href="apropos.html">À propos</a>
-  <span class="nav-disabled" aria-disabled="true" title="Bientôt disponible">Ressources</span>
-  <a href="contact.html">Contact</a>
-  <a href="contact.html" class="btn-primary" style="text-align:center; margin-top:6px;">Prendre rendez-vous</a>
+  <a href="index.html" data-i18n="nav.accueil">Accueil</a>
+  <a href="accompagnement.html" data-i18n="nav.accompagnement">Accompagnement</a>
+  <a href="methode.html" data-i18n="nav.methode">Méthode</a>
+  <a href="apropos.html" data-i18n="nav.apropos">À propos</a>
+  <span class="nav-disabled" aria-disabled="true" data-i18n="nav.ressources" data-i18n-title="nav.ressources_title" title="Bientôt disponible">Ressources</span>
+  <a href="contact.html" data-i18n="nav.contact">Contact</a>
+  <div class="lang-switch">
+    <button class="lang-btn active" data-lang="fr">FR</button>
+    <span class="lang-sep">·</span>
+    <span class="lang-btn-disabled" data-i18n-title="nav.lang_es_title" title="Bientôt disponible en espagnol">ES</span>
+    <span class="lang-sep">·</span>
+    <span class="lang-btn-disabled" data-i18n-title="nav.lang_en_title" title="Bientôt disponible en anglais">EN</span>
+  </div>
+  <a href="contact.html" class="btn-primary" data-i18n="nav.rdv" style="text-align:center; margin-top:6px;">Prendre rendez-vous</a>
 </nav>
 
 <main style="width:100%; background:var(--cream);">
 
   <section class="hero-pad" style="padding:64px 56px 72px; background:linear-gradient(160deg, var(--blush), var(--powder));">
     <div style="max-width:820px; margin:0 auto; text-align:center; display:flex; flex-direction:column; align-items:center; gap:20px;">
-      <span class="eyebrow">À propos</span>
-      <h1 style="font-size:48px; line-height:1.12;">Bonjour, je suis Pilar</h1>
-      <p style="font-size:16px; color:var(--ink-soft); max-width:560px;">FertilityCare Practitioner formée au Saint Paul VI Institute, j'accompagne les couples et les femmes qui souhaitent reprendre confiance dans la connaissance de leur corps.</p>
+      <span class="eyebrow" data-i18n="apropos.hero_eyebrow">À propos</span>
+      <h1 style="font-size:48px; line-height:1.12;" data-i18n="apropos.hero_title">Bonjour, je suis Pilar</h1>
+      <p style="font-size:16px; color:var(--ink-soft); max-width:560px;" data-i18n="apropos.hero_text">FertilityCare Practitioner formée au Saint Paul VI Institute, j'accompagne les couples et les femmes qui souhaitent reprendre confiance dans la connaissance de leur corps.</p>
     </div>
   </section>
 
   <section class="split section-pad" style="padding:88px 56px; display:grid; grid-template-columns:0.85fr 1.15fr; gap:64px; align-items:center; max-width:1200px; margin:0 auto;">
     <div style="width:100%; aspect-ratio:4/5; border-radius:4px; overflow:hidden; position:relative;">
-      <img src="images/profil-pro.jpg" alt="Portrait de Pilar Ramos Beytia" style="width:100%; height:100%; object-fit:cover; display:block;">
+      <img src="images/profil-pro.jpg" alt="Portrait de Pilar Ramos Beytia" data-i18n-alt="apropos.parcours_image_alt" style="width:100%; height:100%; object-fit:cover; display:block;">
       <div style="position:absolute; inset:0; background:linear-gradient(160deg, rgba(255,255,255,0.18), rgba(229,217,218,0.22));"></div>
     </div>
     <div style="display:flex; flex-direction:column; gap:20px;">
-      <span class="eyebrow">Mon parcours</span>
-      <h2 style="font-size:32px;">FertilityCare Practitioner à Madrid</h2>
-      <p style="font-size:15.5px; color:var(--ink-soft);">Je suis Pilar Ramos Beytia, FertilityCare Practitioner certifiée par le Saint Paul VI Institute for the Study of Human Reproduction et membre de l'American Academy of FertilityCare Professionals. Je me suis formée au Método Creighton dans le cadre du programme européen de Bruxelles en 2022, organisé par le St. Joseph FertilityCare™ Center (USA).</p>
-      <p style="font-size:15.5px; color:var(--ink-soft);">Basée à Madrid, j'accompagne depuis plus de trois ans des femmes et des couples de différents pays, en présentiel comme en ligne, dans l'apprentissage de la méthode et le suivi de leur santé reproductive.</p>
+      <span class="eyebrow" data-i18n="apropos.parcours_eyebrow">Mon parcours</span>
+      <h2 style="font-size:32px;" data-i18n="apropos.parcours_title">FertilityCare Practitioner à Madrid</h2>
+      <p style="font-size:15.5px; color:var(--ink-soft);" data-i18n="apropos.parcours_text1">Je suis Pilar Ramos Beytia, FertilityCare Practitioner certifiée par le Saint Paul VI Institute for the Study of Human Reproduction et membre de l'American Academy of FertilityCare Professionals. Je me suis formée au Método Creighton dans le cadre du programme européen de Bruxelles en 2022, organisé par le St. Joseph FertilityCare™ Center (USA).</p>
+      <p style="font-size:15.5px; color:var(--ink-soft);" data-i18n="apropos.parcours_text2">Basée à Madrid, j'accompagne depuis plus de trois ans des femmes et des couples de différents pays, en présentiel comme en ligne, dans l'apprentissage de la méthode et le suivi de leur santé reproductive.</p>
     </div>
   </section>
 
   <section style="background:var(--primary); padding:88px 56px; text-align:center;">
     <div style="max-width:680px; margin:0 auto; display:flex; flex-direction:column; align-items:center; gap:22px;">
       <img src="images/logo-round.png" alt="Camino Creighton" style="height:84px; width:auto; filter:brightness(0) invert(1);">
-      <p class="script" style="font-size:32px; color:var(--white); font-weight:400; line-height:1.4;">« Le coquillage du Camino de Santiago rappelle qu'on ne marche jamais vraiment seule — c'est l'idée qui porte tout mon accompagnement. »</p>
-      <p style="font-size:13px; color:var(--white); opacity:0.85;">— Pilar</p>
+      <p class="script" style="font-size:32px; color:var(--white); font-weight:400; line-height:1.4;" data-i18n="apropos.citation">« Le coquillage du Camino de Santiago rappelle qu'on ne marche jamais vraiment seule — c'est l'idée qui porte tout mon accompagnement. »</p>
+      <p style="font-size:13px; color:var(--white); opacity:0.85;" data-i18n="apropos.citation_auteur">— Pilar</p>
     </div>
   </section>
 
   <section class="section-pad" style="padding:88px 56px; max-width:1200px; margin:0 auto;">
     <div style="text-align:center; max-width:620px; margin:0 auto 56px;">
-      <span class="eyebrow">Mes valeurs</span>
-      <h2 style="font-size:34px; margin-top:14px;">Ce qui guide mon accompagnement</h2>
+      <span class="eyebrow" data-i18n="apropos.valeurs_eyebrow">Mes valeurs</span>
+      <h2 style="font-size:34px; margin-top:14px;" data-i18n="apropos.valeurs_title">Ce qui guide mon accompagnement</h2>
     </div>
     <div class="grid-4" style="display:grid; grid-template-columns:repeat(4, 1fr); gap:28px;">
       <div style="display:flex; flex-direction:column; gap:14px;">
         <svg width="30" height="30" viewBox="0 0 100 100" fill="none" stroke="var(--primary)" stroke-width="3"><path d="M20 55 C20 75 35 85 50 90 C65 85 80 75 80 55"></path><path d="M50 40 C45 25 25 25 25 42 C25 55 50 68 50 68 C50 68 75 55 75 42 C75 25 55 25 50 40 Z"></path></svg>
-        <h3 style="font-size:18px;">Bienveillance</h3>
-        <p style="font-size:13.5px; color:var(--ink-soft);">Un espace sans jugement, quel que soit votre point de départ.</p>
+        <h3 style="font-size:18px;" data-i18n="apropos.valeur1_title">Bienveillance</h3>
+        <p style="font-size:13.5px; color:var(--ink-soft);" data-i18n="apropos.valeur1_text">Un espace sans jugement, quel que soit votre point de départ.</p>
       </div>
       <div style="display:flex; flex-direction:column; gap:14px;">
         <svg width="30" height="30" viewBox="0 0 100 100" fill="none" stroke="var(--primary)" stroke-width="3"><rect x="20" y="15" width="60" height="70" rx="4"></rect><path d="M32 32 L68 32"></path><path d="M32 50 L68 50"></path><path d="M32 68 L55 68"></path></svg>
-        <h3 style="font-size:18px;">Rigueur</h3>
-        <p style="font-size:13.5px; color:var(--ink-soft);">Une méthode scientifique et standardisée, appliquée avec précision.</p>
+        <h3 style="font-size:18px;" data-i18n="apropos.valeur2_title">Rigueur</h3>
+        <p style="font-size:13.5px; color:var(--ink-soft);" data-i18n="apropos.valeur2_text">Une méthode scientifique et standardisée, appliquée avec précision.</p>
       </div>
       <div style="display:flex; flex-direction:column; gap:14px;">
         <svg width="30" height="30" viewBox="0 0 100 100" fill="none" stroke="var(--primary)" stroke-width="3"><circle cx="35" cy="40" r="18"></circle><circle cx="68" cy="55" r="14"></circle><path d="M20 82 C20 65 50 65 50 82"></path><path d="M55 82 C55 70 82 70 82 82"></path></svg>
-        <h3 style="font-size:18px;">Écoute</h3>
-        <p style="font-size:13.5px; color:var(--ink-soft);">Chaque situation est différente ; l'accompagnement s'adapte, jamais l'inverse.</p>
+        <h3 style="font-size:18px;" data-i18n="apropos.valeur3_title">Écoute</h3>
+        <p style="font-size:13.5px; color:var(--ink-soft);" data-i18n="apropos.valeur3_text">Chaque situation est différente ; l'accompagnement s'adapte, jamais l'inverse.</p>
       </div>
       <div style="display:flex; flex-direction:column; gap:14px;">
         <svg width="30" height="30" viewBox="0 0 100 100" fill="none" stroke="var(--primary)" stroke-width="3"><path d="M50 15 L80 30 L80 55 C80 75 65 88 50 92 C35 88 20 75 20 55 L20 30 Z"></path></svg>
-        <h3 style="font-size:18px;">Confidentialité</h3>
-        <p style="font-size:13.5px; color:var(--ink-soft);">Ce qui se dit en séance reste entre nous, sans exception.</p>
+        <h3 style="font-size:18px;" data-i18n="apropos.valeur4_title">Confidentialité</h3>
+        <p style="font-size:13.5px; color:var(--ink-soft);" data-i18n="apropos.valeur4_text">Ce qui se dit en séance reste entre nous, sans exception.</p>
       </div>
     </div>
   </section>
@@ -101,29 +115,29 @@
   <section style="background:var(--white); padding:88px 56px; border-top:1px solid rgba(122,147,164,0.2); border-bottom:1px solid rgba(122,147,164,0.2);">
     <div style="max-width:820px; margin:0 auto;">
       <div style="text-align:center; max-width:620px; margin:0 auto 48px;">
-        <span class="eyebrow">Formation</span>
-        <h2 style="font-size:34px; margin-top:14px;">Certifications</h2>
+        <span class="eyebrow" data-i18n="apropos.formation_eyebrow">Formation</span>
+        <h2 style="font-size:34px; margin-top:14px;" data-i18n="apropos.formation_title">Certifications</h2>
       </div>
       <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:18px;">
         <li style="display:flex; gap:16px; align-items:flex-start; padding:20px 24px; background:var(--cream); border-left:2px solid var(--primary);">
           <span style="color:var(--primary); font-size:18px;">✓</span>
           <div>
-            <p style="font-size:15px; color:var(--ink); font-weight:500;">FertilityCare Practitioner</p>
-            <p style="font-size:13.5px; color:var(--ink-soft);">Certification à l'enseignement de la méthode Creighton</p>
+            <p style="font-size:15px; color:var(--ink); font-weight:500;" data-i18n="apropos.cert1_title">FertilityCare Practitioner</p>
+            <p style="font-size:13.5px; color:var(--ink-soft);" data-i18n="apropos.cert1_text">Certification à l'enseignement de la méthode Creighton</p>
           </div>
         </li>
         <li style="display:flex; gap:16px; align-items:flex-start; padding:20px 24px; background:var(--cream); border-left:2px solid var(--primary);">
           <span style="color:var(--primary); font-size:18px;">✓</span>
           <div>
-            <p style="font-size:15px; color:var(--ink); font-weight:500;">Saint Paul VI Institute</p>
-            <p style="font-size:13.5px; color:var(--ink-soft);">Formation à la NaProTECHNOLOGY</p>
+            <p style="font-size:15px; color:var(--ink); font-weight:500;" data-i18n="apropos.cert2_title">Saint Paul VI Institute</p>
+            <p style="font-size:13.5px; color:var(--ink-soft);" data-i18n="apropos.cert2_text">Formation à la NaProTECHNOLOGY</p>
           </div>
         </li>
         <li style="display:flex; gap:16px; align-items:flex-start; padding:20px 24px; background:var(--cream); border-left:2px solid var(--primary);">
           <span style="color:var(--primary); font-size:18px;">✓</span>
           <div>
-            <p style="font-size:15px; color:var(--ink); font-weight:500;">American Academy of FertilityCare Professionals</p>
-            <p style="font-size:13.5px; color:var(--ink-soft);">Membre, programme européen de formation à Bruxelles (2022) — St. Joseph FertilityCare™ Center</p>
+            <p style="font-size:15px; color:var(--ink); font-weight:500;" data-i18n="apropos.cert3_title">American Academy of FertilityCare Professionals</p>
+            <p style="font-size:13.5px; color:var(--ink-soft);" data-i18n="apropos.cert3_text">Membre, programme européen de formation à Bruxelles (2022) — St. Joseph FertilityCare™ Center</p>
           </div>
         </li>
       </ul>
@@ -132,8 +146,8 @@
 
   <section style="padding:88px 56px; text-align:center;">
     <div style="max-width:600px; margin:0 auto; display:flex; flex-direction:column; align-items:center; gap:22px;">
-      <h2 style="font-size:34px;">Envie d'en parler ?</h2>
-      <a href="contact.html" class="btn-primary">Échangeons</a>
+      <h2 style="font-size:34px;" data-i18n="apropos.cta_title">Envie d'en parler ?</h2>
+      <a href="contact.html" class="btn-primary" data-i18n="apropos.cta_button">Échangeons</a>
     </div>
   </section>
 
@@ -145,33 +159,34 @@
       <div style="display:flex; align-items:baseline; gap:8px; margin-bottom:16px;">
         <img src="images/logo-horizontal.png" alt="Camino Creighton" style="height:36px; width:auto; display:block; filter:brightness(0) invert(1);">
       </div>
-      <p style="font-size:13px; color:var(--powder); max-width:260px;">Accompagnement individuel à la méthode Creighton, à Madrid et en visioconférence.</p>
+      <p style="font-size:13px; color:var(--powder); max-width:260px;" data-i18n="footer.tagline">Accompagnement individuel à la méthode Creighton, à Madrid et en visioconférence.</p>
     </div>
     <div class="footer-col">
-      <h4>Navigation</h4>
-      <a href="accompagnement.html">Accompagnement</a>
-      <a href="methode.html">Méthode</a>
-      <a href="apropos.html">À propos</a>
-      <span class="footer-disabled" aria-disabled="true" title="Bientôt disponible">Ressources</span>
+      <h4 data-i18n="footer.nav_heading">Navigation</h4>
+      <a href="accompagnement.html" data-i18n="nav.accompagnement">Accompagnement</a>
+      <a href="methode.html" data-i18n="nav.methode">Méthode</a>
+      <a href="apropos.html" data-i18n="nav.apropos">À propos</a>
+      <span class="footer-disabled" aria-disabled="true" data-i18n="nav.ressources" data-i18n-title="nav.ressources_title" title="Bientôt disponible">Ressources</span>
     </div>
     <div class="footer-col">
-      <h4>Informations</h4>
-      <a href="index.html#faq">Questions fréquentes</a>
-      <a href="contact.html">Prendre rendez-vous</a>
-      <a href="#">Mentions légales</a>
-      <a href="#">Politique de confidentialité</a>
+      <h4 data-i18n="footer.info_heading">Informations</h4>
+      <a href="index.html#faq" data-i18n="footer.faq_link">Questions fréquentes</a>
+      <a href="contact.html" data-i18n="footer.rdv_link">Prendre rendez-vous</a>
+      <a href="#" data-i18n="footer.mentions">Mentions légales</a>
+      <a href="#" data-i18n="footer.confidentialite">Politique de confidentialité</a>
     </div>
     <div class="footer-col">
-      <h4>Contact</h4>
+      <h4 data-i18n="footer.contact_heading">Contact</h4>
       <a href="mailto:pilar.fertilitycare@gmail.com">pilar.fertilitycare@gmail.com</a>
       <a href="tel:+33767333616">+33 767 33 36 16</a>
-      <span>Madrid, Espagne</span>
+      <span data-i18n="footer.address">Madrid, Espagne</span>
       <a href="https://www.instagram.com/camino.creighton/" target="_blank" rel="noopener">@camino.creighton</a>
     </div>
   </div>
-  <div class="footer-bottom">© 2026 Camino Creighton — Pilar Chevallier Ramos B.</div>
+  <div class="footer-bottom" data-i18n="footer.copyright">© 2026 Camino Creighton — Pilar Chevallier Ramos B.</div>
 </footer>
 
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

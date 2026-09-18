@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contact &amp; rendez-vous | Camino Creighton</title>
-<meta name="description" content="Prenez rendez-vous ou réservez un premier échange téléphonique gratuit pour découvrir la méthode Creighton avec Pilar Ramos Beytia, à Madrid ou en visioconférence.">
+<title data-i18n="meta.contact_title">Contact &amp; rendez-vous | Camino Creighton</title>
+<meta name="description" data-i18n-content="meta.contact_description" content="Prenez rendez-vous ou réservez un premier échange téléphonique gratuit pour découvrir la méthode Creighton avec Pilar Ramos Beytia, à Madrid ou en visioconférence.">
 <link rel="canonical" href="https://caminocreighton.com/contact.html">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap">
 <link rel="stylesheet" href="css/style.css">
@@ -16,106 +16,120 @@
     <img src="images/logo-horizontal.png" alt="Camino Creighton" style="height:60px; width:auto; display:block;">
   </a>
   <nav class="nav-links">
-    <a href="index.html">Accueil</a>
-    <a href="accompagnement.html">Accompagnement</a>
-    <a href="methode.html">Méthode</a>
-    <a href="apropos.html">À propos</a>
-    <span class="nav-disabled" aria-disabled="true" title="Bientôt disponible">Ressources</span>
-    <a href="contact.html" class="active">Contact</a>
+    <a href="index.html" data-i18n="nav.accueil">Accueil</a>
+    <a href="accompagnement.html" data-i18n="nav.accompagnement">Accompagnement</a>
+    <a href="methode.html" data-i18n="nav.methode">Méthode</a>
+    <a href="apropos.html" data-i18n="nav.apropos">À propos</a>
+    <span class="nav-disabled" aria-disabled="true" data-i18n="nav.ressources" data-i18n-title="nav.ressources_title" title="Bientôt disponible">Ressources</span>
+    <a href="contact.html" class="active" data-i18n="nav.contact">Contact</a>
   </nav>
-  <a href="#form" class="btn-primary header-cta-desktop">Prendre rendez-vous</a>
+  <div class="lang-switch lang-switch-header">
+    <button class="lang-btn active" data-lang="fr">FR</button>
+    <span class="lang-sep">·</span>
+    <span class="lang-btn-disabled" data-i18n-title="nav.lang_es_title" title="Bientôt disponible en espagnol">ES</span>
+    <span class="lang-sep">·</span>
+    <span class="lang-btn-disabled" data-i18n-title="nav.lang_en_title" title="Bientôt disponible en anglais">EN</span>
+  </div>
+  <a href="#form" class="btn-primary header-cta-desktop" data-i18n="nav.rdv">Prendre rendez-vous</a>
   <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
   </button>
 </header>
 <nav class="mobile-menu" id="mobile-menu" hidden>
-  <a href="index.html">Accueil</a>
-  <a href="accompagnement.html">Accompagnement</a>
-  <a href="methode.html">Méthode</a>
-  <a href="apropos.html">À propos</a>
-  <span class="nav-disabled" aria-disabled="true" title="Bientôt disponible">Ressources</span>
-  <a href="contact.html">Contact</a>
-  <a href="#form" class="btn-primary" style="text-align:center; margin-top:6px;">Prendre rendez-vous</a>
+  <a href="index.html" data-i18n="nav.accueil">Accueil</a>
+  <a href="accompagnement.html" data-i18n="nav.accompagnement">Accompagnement</a>
+  <a href="methode.html" data-i18n="nav.methode">Méthode</a>
+  <a href="apropos.html" data-i18n="nav.apropos">À propos</a>
+  <span class="nav-disabled" aria-disabled="true" data-i18n="nav.ressources" data-i18n-title="nav.ressources_title" title="Bientôt disponible">Ressources</span>
+  <a href="contact.html" data-i18n="nav.contact">Contact</a>
+  <div class="lang-switch">
+    <button class="lang-btn active" data-lang="fr">FR</button>
+    <span class="lang-sep">·</span>
+    <span class="lang-btn-disabled" data-i18n-title="nav.lang_es_title" title="Bientôt disponible en espagnol">ES</span>
+    <span class="lang-sep">·</span>
+    <span class="lang-btn-disabled" data-i18n-title="nav.lang_en_title" title="Bientôt disponible en anglais">EN</span>
+  </div>
+  <a href="#form" class="btn-primary" data-i18n="nav.rdv" style="text-align:center; margin-top:6px;">Prendre rendez-vous</a>
 </nav>
 
 <main style="width:100%; background:var(--cream);">
 
   <section class="hero-pad" style="padding:64px 56px 56px; background:linear-gradient(160deg, var(--blush), var(--powder));">
     <div style="max-width:820px; margin:0 auto; text-align:center; display:flex; flex-direction:column; align-items:center; gap:20px;">
-      <span class="eyebrow">Contact</span>
-      <h1 style="font-size:48px; line-height:1.12;">Réservons un premier échange</h1>
-      <p style="font-size:16px; color:var(--ink-soft); max-width:560px;">Un premier échange téléphonique gratuit pour cadrer votre besoin — puis, si vous le souhaitez, la séance d'introduction pour découvrir la méthode en détail.</p>
+      <span class="eyebrow" data-i18n="contact.hero_eyebrow">Contact</span>
+      <h1 style="font-size:48px; line-height:1.12;" data-i18n="contact.hero_title">Réservons un premier échange</h1>
+      <p style="font-size:16px; color:var(--ink-soft); max-width:560px;" data-i18n="contact.hero_text">Un premier échange téléphonique gratuit pour cadrer votre besoin — puis, si vous le souhaitez, la séance d'introduction pour découvrir la méthode en détail.</p>
     </div>
   </section>
 
   <section id="form" class="split section-pad" style="padding:80px 56px; display:grid; grid-template-columns:1.2fr 0.8fr; gap:64px; max-width:1200px; margin:0 auto;">
 
     <form action="contact.php" method="POST" style="display:flex; flex-direction:column;">
-      <span class="eyebrow" style="margin-bottom:8px;">Formulaire</span>
-      <h2 style="font-size:28px; margin-bottom:28px;">Parlez-moi de votre situation</h2>
+      <span class="eyebrow" style="margin-bottom:8px;" data-i18n="contact.form_eyebrow">Formulaire</span>
+      <h2 style="font-size:28px; margin-bottom:28px;" data-i18n="contact.form_title">Parlez-moi de votre situation</h2>
 
       <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;" class="field-row">
         <div class="field">
-          <label for="prenom">Prénom</label>
+          <label for="prenom" data-i18n="contact.form_prenom">Prénom</label>
           <input id="prenom" type="text" name="prenom" autocomplete="given-name" required>
         </div>
         <div class="field">
-          <label for="nom">Nom</label>
+          <label for="nom" data-i18n="contact.form_nom">Nom</label>
           <input id="nom" type="text" name="nom" autocomplete="family-name" required>
         </div>
       </div>
 
       <div class="field">
-        <label for="email">Email</label>
+        <label for="email" data-i18n="contact.form_email">Email</label>
         <input id="email" type="email" name="email" autocomplete="email" required>
       </div>
 
       <div class="field">
-        <label for="situation">Votre situation</label>
+        <label for="situation" data-i18n="contact.form_situation">Votre situation</label>
         <select id="situation" name="situation">
-          <option>Je veux d'abord un appel gratuit pour cadrer mon besoin</option>
-          <option>Je cherche une grossesse</option>
-          <option>Je souhaite éviter une grossesse naturellement</option>
-          <option>Je veux surveiller ma santé hormonale</option>
-          <option>Autre / je ne sais pas encore</option>
+          <option data-i18n="contact.form_situation_opt1">Je veux d'abord un appel gratuit pour cadrer mon besoin</option>
+          <option data-i18n="contact.form_situation_opt2">Je cherche une grossesse</option>
+          <option data-i18n="contact.form_situation_opt3">Je souhaite éviter une grossesse naturellement</option>
+          <option data-i18n="contact.form_situation_opt4">Je veux surveiller ma santé hormonale</option>
+          <option data-i18n="contact.form_situation_opt5">Autre / je ne sais pas encore</option>
         </select>
       </div>
 
       <div class="field">
-        <label for="modalite">Format préféré</label>
+        <label for="modalite" data-i18n="contact.form_modalite">Format préféré</label>
         <select id="modalite" name="modalite">
-          <option>En visioconférence</option>
-          <option>En cabinet à Madrid</option>
-          <option>Peu importe</option>
+          <option data-i18n="contact.form_modalite_opt1">En visioconférence</option>
+          <option data-i18n="contact.form_modalite_opt2">En cabinet à Madrid</option>
+          <option data-i18n="contact.form_modalite_opt3">Peu importe</option>
         </select>
       </div>
 
       <div class="field">
-        <label for="message">Message (optionnel)</label>
+        <label for="message" data-i18n="contact.form_message">Message (optionnel)</label>
         <textarea id="message" name="message" rows="4"></textarea>
       </div>
 
-      <button type="submit" class="btn-primary" style="width:fit-content; margin-top:8px;">Envoyer ma demande</button>
+      <button type="submit" class="btn-primary" style="width:fit-content; margin-top:8px;" data-i18n="contact.form_submit">Envoyer ma demande</button>
     </form>
 
     <div style="display:flex; flex-direction:column; gap:28px;">
       <div>
-        <span class="eyebrow">Informations pratiques</span>
+        <span class="eyebrow" data-i18n="contact.infos_eyebrow">Informations pratiques</span>
         <div style="display:flex; flex-direction:column; gap:16px; margin-top:16px;">
           <div>
-            <p style="font-size:13px; color:var(--ink-soft); letter-spacing:0.04em; text-transform:uppercase; margin-bottom:4px;">Email</p>
+            <p style="font-size:13px; color:var(--ink-soft); letter-spacing:0.04em; text-transform:uppercase; margin-bottom:4px;" data-i18n="contact.infos_email_label">Email</p>
             <a href="mailto:pilar.fertilitycare@gmail.com" style="font-size:15px; color:var(--ink);">pilar.fertilitycare@gmail.com</a>
           </div>
           <div>
-            <p style="font-size:13px; color:var(--ink-soft); letter-spacing:0.04em; text-transform:uppercase; margin-bottom:4px;">Téléphone</p>
+            <p style="font-size:13px; color:var(--ink-soft); letter-spacing:0.04em; text-transform:uppercase; margin-bottom:4px;" data-i18n="contact.infos_tel_label">Téléphone</p>
             <a href="tel:+33767333616" style="font-size:15px; color:var(--ink);">+33 767 33 36 16</a>
           </div>
           <div>
-            <p style="font-size:13px; color:var(--ink-soft); letter-spacing:0.04em; text-transform:uppercase; margin-bottom:4px;">ADRESSE</p>
-            <p style="font-size:15px; color:var(--ink);">Calle Francia 6, Pozuelo de Alarcón, Madrid</p>
+            <p style="font-size:13px; color:var(--ink-soft); letter-spacing:0.04em; text-transform:uppercase; margin-bottom:4px;" data-i18n="contact.infos_adresse_label">ADRESSE</p>
+            <p style="font-size:15px; color:var(--ink);" data-i18n="contact.infos_adresse">Calle Francia 6, Pozuelo de Alarcón, Madrid</p>
           </div>
           <div>
-            <p style="font-size:13px; color:var(--ink-soft); letter-spacing:0.04em; text-transform:uppercase; margin-bottom:4px;">Instagram</p>
+            <p style="font-size:13px; color:var(--ink-soft); letter-spacing:0.04em; text-transform:uppercase; margin-bottom:4px;" data-i18n="contact.infos_instagram_label">Instagram</p>
             <a href="https://www.instagram.com/camino.creighton/" target="_blank" rel="noopener" style="font-size:15px;">@camino.creighton</a>
           </div>
         </div>
@@ -125,37 +139,37 @@
 
   <section style="padding:22px 56px; background:var(--white); border-top:1px solid rgba(122,147,164,0.2); border-bottom:1px solid rgba(122,147,164,0.2);">
     <div style="max-width:1200px; margin:0 auto; display:flex; align-items:center; justify-content:center; gap:18px; flex-wrap:wrap; text-align:center;">
-      <span style="font-size:13px; color:var(--ink-soft);">Premier échange gratuit, sans engagement</span>
+      <span style="font-size:13px; color:var(--ink-soft);" data-i18n="contact.reassurance1">Premier échange gratuit, sans engagement</span>
       <span style="color:var(--soft-blue);">·</span>
-      <span style="font-size:13px; color:var(--ink-soft);">Réponse sous 48h</span>
+      <span style="font-size:13px; color:var(--ink-soft);" data-i18n="contact.reassurance2">Réponse sous 48h</span>
     </div>
   </section>
 
   <section style="padding:88px 56px; max-width:820px; margin:0 auto;">
     <div style="text-align:center; margin-bottom:48px;">
-      <span class="eyebrow">Questions pratiques</span>
-      <h2 style="font-size:32px; margin-top:14px;">Avant de nous écrire</h2>
+      <span class="eyebrow" data-i18n="contact.faq_eyebrow">Questions pratiques</span>
+      <h2 style="font-size:32px; margin-top:14px;" data-i18n="contact.faq_title">Avant de nous écrire</h2>
     </div>
     <div class="faq-list">
       <div class="faq-item">
-        <button class="faq-btn" aria-expanded="true"><span class="faq-q">Les séances se font-elles en cabinet ou en visio ?</span><span class="faq-icon">−</span></button>
-        <div class="faq-answer"><p>Les deux : en présentiel à Madrid ou en visioconférence, selon votre préférence et votre lieu de résidence. Vous pouvez aussi alterner les deux formats.</p></div>
+        <button class="faq-btn" aria-expanded="true"><span class="faq-q" data-i18n="contact.faq_q1">Les séances se font-elles en cabinet ou en visio ?</span><span class="faq-icon">−</span></button>
+        <div class="faq-answer"><p data-i18n="contact.faq_a1">Les deux : en présentiel à Madrid ou en visioconférence, selon votre préférence et votre lieu de résidence. Vous pouvez aussi alterner les deux formats.</p></div>
       </div>
       <div class="faq-item">
-        <button class="faq-btn" aria-expanded="false"><span class="faq-q">Je n'habite pas en Espagne, est-ce un problème ?</span><span class="faq-icon">+</span></button>
-        <div class="faq-answer" hidden><p>Non, l'accompagnement à distance fonctionne aussi bien qu'en présentiel — seul le décalage horaire est à prendre en compte pour caler les séances.</p></div>
+        <button class="faq-btn" aria-expanded="false"><span class="faq-q" data-i18n="contact.faq_q2">Je n'habite pas en Espagne, est-ce un problème ?</span><span class="faq-icon">+</span></button>
+        <div class="faq-answer" hidden><p data-i18n="contact.faq_a2">Non, l'accompagnement à distance fonctionne aussi bien qu'en présentiel — seul le décalage horaire est à prendre en compte pour caler les séances.</p></div>
       </div>
       <div class="faq-item">
-        <button class="faq-btn" aria-expanded="false"><span class="faq-q">Dans quelles langues se déroulent les séances ?</span><span class="faq-icon">+</span></button>
-        <div class="faq-answer" hidden><p>Principalement en espagnol, et en français sur demande.</p></div>
+        <button class="faq-btn" aria-expanded="false"><span class="faq-q" data-i18n="contact.faq_q3">Dans quelles langues se déroulent les séances ?</span><span class="faq-icon">+</span></button>
+        <div class="faq-answer" hidden><p data-i18n="contact.faq_a3">Principalement en espagnol, et en français sur demande.</p></div>
       </div>
       <div class="faq-item">
-        <button class="faq-btn" aria-expanded="false"><span class="faq-q">Sous combien de temps aurai-je une réponse ?</span><span class="faq-icon">+</span></button>
-        <div class="faq-answer" hidden><p>Je réponds à chaque demande sous 48h ouvrées pour convenir ensemble d'un premier échange.</p></div>
+        <button class="faq-btn" aria-expanded="false"><span class="faq-q" data-i18n="contact.faq_q4">Sous combien de temps aurai-je une réponse ?</span><span class="faq-icon">+</span></button>
+        <div class="faq-answer" hidden><p data-i18n="contact.faq_a4">Je réponds à chaque demande sous 48h ouvrées pour convenir ensemble d'un premier échange.</p></div>
       </div>
       <div class="faq-item">
-        <button class="faq-btn" aria-expanded="false"><span class="faq-q">Comment fonctionne le paiement ?</span><span class="faq-icon">+</span></button>
-        <div class="faq-answer" hidden><p>Par virement bancaire, à régler au moins 48h avant chaque séance pour la confirmer. Les coordonnées vous sont envoyées après votre demande.</p></div>
+        <button class="faq-btn" aria-expanded="false"><span class="faq-q" data-i18n="contact.faq_q5">Comment fonctionne le paiement ?</span><span class="faq-icon">+</span></button>
+        <div class="faq-answer" hidden><p data-i18n="contact.faq_a5">Par virement bancaire, à régler au moins 48h avant chaque séance pour la confirmer. Les coordonnées vous sont envoyées après votre demande.</p></div>
       </div>
     </div>
   </section>
@@ -168,33 +182,34 @@
       <div style="display:flex; align-items:baseline; gap:8px; margin-bottom:16px;">
         <img src="images/logo-horizontal.png" alt="Camino Creighton" style="height:36px; width:auto; display:block; filter:brightness(0) invert(1);">
       </div>
-      <p style="font-size:13px; color:var(--powder); max-width:260px;">Accompagnement individuel à la méthode Creighton, à Madrid et en visioconférence.</p>
+      <p style="font-size:13px; color:var(--powder); max-width:260px;" data-i18n="footer.tagline">Accompagnement individuel à la méthode Creighton, à Madrid et en visioconférence.</p>
     </div>
     <div class="footer-col">
-      <h4>Navigation</h4>
-      <a href="accompagnement.html">Accompagnement</a>
-      <a href="methode.html">Méthode</a>
-      <a href="apropos.html">À propos</a>
-      <span class="footer-disabled" aria-disabled="true" title="Bientôt disponible">Ressources</span>
+      <h4 data-i18n="footer.nav_heading">Navigation</h4>
+      <a href="accompagnement.html" data-i18n="nav.accompagnement">Accompagnement</a>
+      <a href="methode.html" data-i18n="nav.methode">Méthode</a>
+      <a href="apropos.html" data-i18n="nav.apropos">À propos</a>
+      <span class="footer-disabled" aria-disabled="true" data-i18n="nav.ressources" data-i18n-title="nav.ressources_title" title="Bientôt disponible">Ressources</span>
     </div>
     <div class="footer-col">
-      <h4>Informations</h4>
-      <a href="index.html#faq">Questions fréquentes</a>
-      <a href="contact.html">Prendre rendez-vous</a>
-      <a href="#">Mentions légales</a>
-      <a href="#">Politique de confidentialité</a>
+      <h4 data-i18n="footer.info_heading">Informations</h4>
+      <a href="index.html#faq" data-i18n="footer.faq_link">Questions fréquentes</a>
+      <a href="contact.html" data-i18n="footer.rdv_link">Prendre rendez-vous</a>
+      <a href="#" data-i18n="footer.mentions">Mentions légales</a>
+      <a href="#" data-i18n="footer.confidentialite">Politique de confidentialité</a>
     </div>
     <div class="footer-col">
-      <h4>Contact</h4>
+      <h4 data-i18n="footer.contact_heading">Contact</h4>
       <a href="mailto:pilar.fertilitycare@gmail.com">pilar.fertilitycare@gmail.com</a>
       <a href="tel:+33767333616">+33 767 33 36 16</a>
-      <span>Madrid, Espagne</span>
+      <span data-i18n="footer.address">Madrid, Espagne</span>
       <a href="https://www.instagram.com/camino.creighton/" target="_blank" rel="noopener">@camino.creighton</a>
     </div>
   </div>
-  <div class="footer-bottom">© 2026 Camino Creighton — Pilar Chevallier Ramos B.</div>
+  <div class="footer-bottom" data-i18n="footer.copyright">© 2026 Camino Creighton — Pilar Chevallier Ramos B.</div>
 </footer>
 
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
