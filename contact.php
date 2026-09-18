@@ -11,25 +11,35 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
   exit;
 }
 
+$type = clean($_POST['type'] ?? 'reservation');
 $prenom = clean($_POST['prenom'] ?? '');
 $nom = clean($_POST['nom'] ?? '');
 $email = clean($_POST['email'] ?? '');
-$situation = clean($_POST['situation'] ?? '');
-$modalite = clean($_POST['modalite'] ?? '');
-$message = clean($_POST['message'] ?? '');
 
 if ($prenom === '' || $nom === '' || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
   header('Location: contact.html?error=1');
   exit;
 }
 
-$subject = "Nouvelle demande de contact — Camino Creighton";
-$body = "Prénom : $prenom\n"
-      . "Nom : $nom\n"
-      . "Email : $email\n"
-      . "Situation : $situation\n"
-      . "Format préféré : $modalite\n"
-      . "Message : $message\n";
+if ($type === 'question') {
+  $message = clean($_POST['message'] ?? '');
+  $subject = "Nouvelle question — Camino Creighton";
+  $body = "Prénom : $prenom\n"
+        . "Nom : $nom\n"
+        . "Email : $email\n"
+        . "Question : $message\n";
+} else {
+  $formule = clean($_POST['formule'] ?? '');
+  $modalite = clean($_POST['modalite'] ?? '');
+  $dispo = clean($_POST['dispo'] ?? '');
+  $subject = "Nouvelle demande de réservation — Camino Creighton";
+  $body = "Prénom : $prenom\n"
+        . "Nom : $nom\n"
+        . "Email : $email\n"
+        . "Formule souhaitée : $formule\n"
+        . "Format préféré : $modalite\n"
+        . "Disponibilités : $dispo\n";
+}
 
 $headers = "From: Camino Creighton <no-reply@caminocreighton.com>\r\n"
          . "Reply-To: $email\r\n"

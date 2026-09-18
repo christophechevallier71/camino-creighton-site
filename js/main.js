@@ -42,6 +42,28 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Contact page: path selector (Réserver une séance vs Poser une question)
+  const pathReserver = document.getElementById('path-reserver');
+  const pathQuestion = document.getElementById('path-question');
+  const formReserver = document.getElementById('form-reserver');
+  const formQuestion = document.getElementById('form-question');
+  if (pathReserver && pathQuestion && formReserver && formQuestion) {
+    const setContactMode = (mode) => {
+      const isReserver = mode !== 'question';
+      pathReserver.classList.toggle('active', isReserver);
+      pathQuestion.classList.toggle('active', !isReserver);
+      formReserver.classList.toggle('active', isReserver);
+      formQuestion.classList.toggle('active', !isReserver);
+    };
+    const params = new URLSearchParams(window.location.search);
+    setContactMode(params.get('mode') === 'question' ? 'question' : 'reserver');
+    pathReserver.addEventListener('click', () => setContactMode('reserver'));
+    pathQuestion.addEventListener('click', () => setContactMode('question'));
+    document.querySelectorAll('.js-select-reserver').forEach(btn => {
+      btn.addEventListener('click', () => setContactMode('reserver'));
+    });
+  }
+
   // Scroll-reveal: fade up each top-level section as it enters view (skip the hero)
   const sections = Array.from(document.querySelectorAll('main > section')).slice(1);
   sections.forEach(el => el.classList.add('reveal'));

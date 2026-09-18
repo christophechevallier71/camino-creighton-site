@@ -28,8 +28,12 @@ img{max-width:100%;}
 .btn-ghost:hover{background:var(--ink);color:var(--white);}
 
 .card{background:var(--white);}
-.price-card{padding:40px 32px;background:var(--white);border:1px solid var(--blush);display:flex;flex-direction:column;gap:16px;}
+.price-card{padding:40px 32px;background:var(--white);border:1px solid var(--blush);display:flex;flex-direction:column;gap:16px;position:relative;}
 .price-card.featured{border:2px solid var(--primary);position:relative;}
+.price-badge{position:absolute;top:16px;right:16px;background:var(--primary);color:var(--white);font-size:11px;font-weight:600;letter-spacing:0.04em;padding:4px 10px;border-radius:20px;white-space:nowrap;}
+.price-strike{font-size:13px;color:var(--ink-soft);font-weight:500;margin-top:-8px;text-decoration:line-through;}
+.price-kit{display:flex;align-items:center;gap:8px;padding:10px 12px;}
+.price-kit .check{color:var(--primary);font-size:15px;font-weight:700;}
 .stat-box{padding:32px 24px;text-align:center;border:1px dashed var(--soft-blue);}
 
 .card, .price-card, .stat-box{transition:transform .25s ease, box-shadow .25s ease;}
@@ -106,3 +110,12 @@ label{display:block; font-size:12px; letter-spacing:0.05em; text-transform:upper
 input, select, textarea{width:100%; padding:13px 14px; border:1px solid var(--blush); background:var(--white); color:var(--ink); font-family:'Jost',sans-serif; font-size:14px; border-radius:2px;}
 input:focus, select:focus, textarea:focus{outline:none; border-color:var(--primary);}
 .field{display:flex; flex-direction:column; gap:0; margin-bottom:20px;}
+
+/* ---- Contact path selector ---- */
+.path-btn{display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;padding:28px 24px;background:var(--white);border:2px solid var(--blush);border-radius:2px;cursor:pointer;font-family:'Jost',sans-serif;width:100%;}
+.path-btn.active{border-color:var(--primary);}
+.path-btn h3{font-size:18px;color:var(--ink);}
+.path-btn p{font-size:13px;color:var(--ink-soft);}
+.path-btn svg{display:block;}
+.contact-form{display:none;}
+.contact-form.active{display:flex;flex-direction:column;}
