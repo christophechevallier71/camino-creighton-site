@@ -66,6 +66,10 @@ img{max-width:100%;}
 .lang-switch .lang-btn-disabled{font-size:13px;color:var(--ink-soft);opacity:0.4;cursor:default;user-select:none;}
 .lang-switch .lang-sep{color:var(--soft-blue);}
 .mobile-menu .lang-switch{margin-top:4px;}
+.lang-switch-header{flex-direction:column;gap:2px;font-size:10px;}
+.lang-switch-header button.lang-btn,
+.lang-switch-header .lang-btn-disabled{font-size:10px;}
+.lang-switch-header .lang-sep{display:none;}
 
 /* ---- Footer ---- */
 .site-footer{background:var(--ink);padding:64px 56px 32px;color:var(--cream);}
