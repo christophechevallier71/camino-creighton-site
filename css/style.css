@@ -28,7 +28,7 @@ img{max-width:100%;}
 .btn-ghost:hover{background:var(--ink);color:var(--white);}
 
 .card{background:var(--white);}
-.price-card{padding:40px 32px;background:var(--white);border:1px solid var(--blush);display:flex;flex-direction:column;gap:16px;position:relative;}
+.price-card{padding:40px 32px;background:var(--white);border:1px solid var(--blush);display:flex;flex-direction:column;gap:16px;position:relative;min-width:0;}
 .price-card.featured{border:2px solid var(--primary);position:relative;}
 .price-badge{position:absolute;top:16px;right:16px;background:var(--primary);color:var(--white);font-size:11px;font-weight:600;letter-spacing:0.04em;padding:4px 10px;border-radius:20px;white-space:nowrap;}
 .price-strike{font-size:13px;color:var(--ink-soft);font-weight:500;margin-top:-8px;text-decoration:line-through;}
@@ -103,6 +103,7 @@ body{animation:page-fade-in .5s ease both;}
   .split{grid-template-columns:1fr !important;}
   .split-rev{grid-template-columns:1fr !important;}
   .field-row{grid-template-columns:1fr !important;}
+  .footer-grid{grid-template-columns:1fr !important; gap:32px !important;}
   h1{font-size:40px !important;}
   .hero-pad{padding:56px 24px !important;}
   .section-pad{padding:56px 24px !important;}
