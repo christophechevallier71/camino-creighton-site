@@ -6,7 +6,7 @@
 (function () {
   // Hostinger's CDN caches static files for 7 days — bump this on every
   // content change so lang/*.json is fetched fresh instead of from cache.
-  const ASSET_VERSION = '8';
+  const ASSET_VERSION = '9';
   const STORAGE_KEY = 'camino_lang';
   const DEFAULT_LANG = 'es';
   // Add 'en' here once its lang/en.json file is translated — that alone
