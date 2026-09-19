@@ -15,7 +15,7 @@
 <link rel="icon" href="images/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap">
-<link rel="stylesheet" href="css/style.css?v=7">
+<link rel="stylesheet" href="css/style.css?v=8">
 </head>
 <body>
 
@@ -24,12 +24,56 @@
     <img src="images/logo-horizontal.png" alt="Camino Creighton" style="height:60px; width:auto; display:block;">
   </a>
   <nav class="nav-links">
-    <a href="index.html" data-i18n="nav.accueil">Inicio</a>
-    <a href="accompagnement.html" data-i18n="nav.accompagnement">Acompañamiento</a>
-    <a href="methode.html" data-i18n="nav.methode">Método</a>
-    <a href="apropos.html" class="active" data-i18n="nav.apropos">Sobre mí</a>
+    <div class="nav-item">
+      <a href="index.html" data-i18n="nav.accueil">Inicio<span class="nav-caret">▾</span></a>
+      <div class="nav-dropdown">
+        <a href="index.html#pour-qui" data-i18n="nav.home_pour_qui">Para quién</a>
+        <a href="index.html#methode" data-i18n="nav.home_methode">El método</a>
+        <a href="index.html#chemin" data-i18n="nav.home_chemin">El camino</a>
+        <a href="index.html#temoignages" data-i18n="nav.home_temoignages">Testimonios</a>
+        <a href="index.html#faq" data-i18n="nav.home_faq">FAQ</a>
+        <a href="index.html#contact" data-i18n="nav.home_contact">Contacto</a>
+      </div>
+    </div>
+    <div class="nav-item">
+      <a href="accompagnement.html" data-i18n="nav.accompagnement">Acompañamiento<span class="nav-caret">▾</span></a>
+      <div class="nav-dropdown">
+        <a href="accompagnement.html#suivi" data-i18n="nav.accompagnement_suivi">El seguimiento</a>
+        <a href="accompagnement.html#deroule" data-i18n="nav.accompagnement_deroule">Desarrollo de las sesiones</a>
+        <a href="accompagnement.html#tarifs" data-i18n="nav.accompagnement_tarifs">Tarifas y planes</a>
+        <a href="accompagnement.html#temoignages" data-i18n="nav.accompagnement_temoignages">Testimonios</a>
+        <a href="accompagnement.html#faq" data-i18n="nav.accompagnement_faq">FAQ</a>
+      </div>
+    </div>
+    <div class="nav-item">
+      <a href="methode.html" data-i18n="nav.methode">Método<span class="nav-caret">▾</span></a>
+      <div class="nav-dropdown">
+        <a href="methode.html#quoi" data-i18n="nav.methode_quoi">Qué es</a>
+        <a href="methode.html#fonctionnement" data-i18n="nav.methode_fonctionnement">En el día a día</a>
+        <a href="methode.html#pourqui" data-i18n="nav.methode_pourqui">Para quién</a>
+        <a href="methode.html#napro" data-i18n="nav.methode_napro">NaProTECHNOLOGY</a>
+        <a href="methode.html#fiabilite" data-i18n="nav.methode_fiabilite">Fiabilidad</a>
+        <a href="methode.html#faq" data-i18n="nav.methode_faq">FAQ</a>
+      </div>
+    </div>
+    <div class="nav-item">
+      <a href="apropos.html" class="active" data-i18n="nav.apropos">Sobre mí<span class="nav-caret">▾</span></a>
+      <div class="nav-dropdown">
+        <a href="#parcours" data-i18n="nav.apropos_parcours">Mi trayectoria</a>
+        <a href="#valeurs" data-i18n="nav.apropos_valeurs">Mis valores</a>
+        <a href="#formation" data-i18n="nav.apropos_formation">Certificaciones</a>
+      </div>
+    </div>
     <span class="nav-disabled" aria-disabled="true" data-i18n="nav.ressources" data-i18n-title="nav.ressources_title" title="Próximamente">Recursos</span>
-    <a href="contact.html" data-i18n="nav.contact">Contacto</a>
+    <div class="nav-item">
+      <a href="contact.html" data-i18n="nav.contact">Contacto<span class="nav-caret">▾</span></a>
+      <div class="nav-dropdown">
+        <a href="contact.html#form" data-i18n="nav.contact_reserver">Reservar una sesión</a>
+        <a href="contact.html#form" data-i18n="nav.contact_question">Hacer una pregunta</a>
+        <a href="contact.html#infos" data-i18n="nav.contact_infos">Información práctica</a>
+        <a href="contact.html#faq" data-i18n="nav.contact_faq">FAQ</a>
+      </div>
+    </div>
   </nav>
   <div class="lang-switch lang-switch-header">
     <button class="lang-btn active" data-lang="fr">FR</button>
@@ -70,7 +114,7 @@
     </div>
   </section>
 
-  <section class="split section-pad" style="padding:88px 56px; display:grid; grid-template-columns:0.85fr 1.15fr; gap:64px; align-items:center; max-width:1200px; margin:0 auto;">
+  <section id="parcours" class="split section-pad" style="padding:88px 56px; display:grid; grid-template-columns:0.85fr 1.15fr; gap:64px; align-items:center; max-width:1200px; margin:0 auto;">
     <div style="width:100%; aspect-ratio:4/5; border-radius:4px; overflow:hidden; position:relative;">
       <img src="images/profil-pro.jpg" alt="Retrato de Pilar Ramos Beytia" data-i18n-alt="apropos.parcours_image_alt" style="width:100%; height:100%; object-fit:cover; display:block;">
       <div style="position:absolute; inset:0; background:linear-gradient(160deg, rgba(255,255,255,0.18), rgba(229,217,218,0.22));"></div>
@@ -91,7 +135,7 @@
     </div>
   </section>
 
-  <section class="section-pad" style="padding:88px 56px; max-width:1200px; margin:0 auto;">
+  <section id="valeurs" class="section-pad" style="padding:88px 56px; max-width:1200px; margin:0 auto;">
     <div style="text-align:center; max-width:620px; margin:0 auto 56px;">
       <span class="eyebrow" data-i18n="apropos.valeurs_eyebrow">Mis valores</span>
       <h2 style="font-size:34px; margin-top:14px;" data-i18n="apropos.valeurs_title">Lo que guía mi acompañamiento</h2>
@@ -120,7 +164,7 @@
     </div>
   </section>
 
-  <section style="background:var(--white); padding:88px 56px; border-top:1px solid rgba(122,147,164,0.2); border-bottom:1px solid rgba(122,147,164,0.2);">
+  <section id="formation" style="background:var(--white); padding:88px 56px; border-top:1px solid rgba(122,147,164,0.2); border-bottom:1px solid rgba(122,147,164,0.2);">
     <div style="max-width:820px; margin:0 auto;">
       <div style="text-align:center; max-width:620px; margin:0 auto 48px;">
         <span class="eyebrow" data-i18n="apropos.formation_eyebrow">Formación</span>
@@ -194,7 +238,7 @@
   <div class="footer-bottom" data-i18n="footer.copyright">© 2026 Camino Creighton — Pilar Chevallier Ramos B.</div>
 </footer>
 
-<script src="js/i18n.js?v=7"></script>
-<script src="js/main.js?v=7"></script>
+<script src="js/i18n.js?v=8"></script>
+<script src="js/main.js?v=8"></script>
 </body>
 </html>

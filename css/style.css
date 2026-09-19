@@ -32,6 +32,7 @@ img{max-width:100%;}
 .price-card.featured{border:2px solid var(--primary);position:relative;}
 .price-badge{position:absolute;top:16px;right:16px;background:var(--primary);color:var(--white);font-size:11px;font-weight:600;letter-spacing:0.04em;padding:4px 10px;border-radius:20px;white-space:nowrap;}
 .price-strike{font-size:13px;color:var(--ink-soft);font-weight:500;margin-top:-8px;text-decoration:line-through;}
+.price-note{font-size:13px;color:var(--ink-soft);font-weight:500;margin-top:-8px;}
 .price-kit{display:flex;align-items:center;gap:8px;padding:10px 12px;}
 .price-kit .check{color:var(--primary);font-size:15px;font-weight:700;}
 .stat-box{padding:32px 24px;text-align:center;border:1px dashed var(--soft-blue);}
@@ -54,6 +55,12 @@ img{max-width:100%;}
 .nav-links a{font-size:16px;color:var(--ink);}
 .nav-links a.active{color:var(--primary);border-bottom:1px solid var(--primary);padding-bottom:2px;}
 .nav-disabled{font-size:16px;color:var(--ink-soft);opacity:0.4;cursor:default;user-select:none;}
+.nav-item{position:relative;}
+.nav-dropdown{position:absolute;top:100%;left:50%;transform:translateX(-50%) translateY(4px);background:var(--white);border:1px solid var(--blush);border-radius:2px;box-shadow:0 14px 32px rgba(51,66,75,0.14);padding:10px 0;min-width:216px;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .15s ease, transform .15s ease;z-index:200;}
+.nav-item:hover .nav-dropdown,.nav-item:focus-within .nav-dropdown{opacity:1;visibility:visible;pointer-events:auto;transform:translateX(-50%) translateY(0);}
+.nav-dropdown a{display:block;padding:9px 22px;font-size:13.5px;color:var(--ink);white-space:nowrap;}
+.nav-dropdown a:hover{background:var(--cream);color:var(--primary-dark);}
+.nav-caret{font-size:9px;margin-left:4px;opacity:0.55;display:inline-block;transform:translateY(-1px);}
 .nav-toggle{display:none;align-items:center;justify-content:center;width:40px;height:40px;background:transparent;border:none;cursor:pointer;padding:0;}
 .mobile-menu{width:100%;background:var(--white);border-bottom:1px solid rgba(122,147,164,0.2);padding:8px 32px 28px;display:flex;flex-direction:column;gap:22px;}
 .mobile-menu[hidden]{display:none;}

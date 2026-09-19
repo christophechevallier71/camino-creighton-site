@@ -15,7 +15,7 @@
 <link rel="icon" href="images/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap">
-<link rel="stylesheet" href="css/style.css?v=7">
+<link rel="stylesheet" href="css/style.css?v=8">
 </head>
 <body>
 
@@ -24,12 +24,56 @@
     <img src="images/logo-horizontal.png" alt="Camino Creighton" style="height:72px; width:auto; display:block;">
   </a>
   <nav class="nav-links">
-    <a href="index.html" data-i18n="nav.accueil">Inicio</a>
-    <a href="accompagnement.html" data-i18n="nav.accompagnement">Acompañamiento</a>
-    <a href="methode.html" class="active" data-i18n="nav.methode">Método</a>
-    <a href="apropos.html" data-i18n="nav.apropos">Sobre mí</a>
+    <div class="nav-item">
+      <a href="index.html" data-i18n="nav.accueil">Inicio<span class="nav-caret">▾</span></a>
+      <div class="nav-dropdown">
+        <a href="index.html#pour-qui" data-i18n="nav.home_pour_qui">Para quién</a>
+        <a href="index.html#methode" data-i18n="nav.home_methode">El método</a>
+        <a href="index.html#chemin" data-i18n="nav.home_chemin">El camino</a>
+        <a href="index.html#temoignages" data-i18n="nav.home_temoignages">Testimonios</a>
+        <a href="index.html#faq" data-i18n="nav.home_faq">FAQ</a>
+        <a href="index.html#contact" data-i18n="nav.home_contact">Contacto</a>
+      </div>
+    </div>
+    <div class="nav-item">
+      <a href="accompagnement.html" data-i18n="nav.accompagnement">Acompañamiento<span class="nav-caret">▾</span></a>
+      <div class="nav-dropdown">
+        <a href="accompagnement.html#suivi" data-i18n="nav.accompagnement_suivi">El seguimiento</a>
+        <a href="accompagnement.html#deroule" data-i18n="nav.accompagnement_deroule">Desarrollo de las sesiones</a>
+        <a href="accompagnement.html#tarifs" data-i18n="nav.accompagnement_tarifs">Tarifas y planes</a>
+        <a href="accompagnement.html#temoignages" data-i18n="nav.accompagnement_temoignages">Testimonios</a>
+        <a href="accompagnement.html#faq" data-i18n="nav.accompagnement_faq">FAQ</a>
+      </div>
+    </div>
+    <div class="nav-item">
+      <a href="methode.html" class="active" data-i18n="nav.methode">Método<span class="nav-caret">▾</span></a>
+      <div class="nav-dropdown">
+        <a href="#quoi" data-i18n="nav.methode_quoi">Qué es</a>
+        <a href="#fonctionnement" data-i18n="nav.methode_fonctionnement">En el día a día</a>
+        <a href="#pourqui" data-i18n="nav.methode_pourqui">Para quién</a>
+        <a href="#napro" data-i18n="nav.methode_napro">NaProTECHNOLOGY</a>
+        <a href="#fiabilite" data-i18n="nav.methode_fiabilite">Fiabilidad</a>
+        <a href="#faq" data-i18n="nav.methode_faq">FAQ</a>
+      </div>
+    </div>
+    <div class="nav-item">
+      <a href="apropos.html" data-i18n="nav.apropos">Sobre mí<span class="nav-caret">▾</span></a>
+      <div class="nav-dropdown">
+        <a href="apropos.html#parcours" data-i18n="nav.apropos_parcours">Mi trayectoria</a>
+        <a href="apropos.html#valeurs" data-i18n="nav.apropos_valeurs">Mis valores</a>
+        <a href="apropos.html#formation" data-i18n="nav.apropos_formation">Certificaciones</a>
+      </div>
+    </div>
     <span class="nav-disabled" aria-disabled="true" data-i18n="nav.ressources" data-i18n-title="nav.ressources_title" title="Próximamente">Recursos</span>
-    <a href="contact.html" data-i18n="nav.contact">Contacto</a>
+    <div class="nav-item">
+      <a href="contact.html" data-i18n="nav.contact">Contacto<span class="nav-caret">▾</span></a>
+      <div class="nav-dropdown">
+        <a href="contact.html#form" data-i18n="nav.contact_reserver">Reservar una sesión</a>
+        <a href="contact.html#form" data-i18n="nav.contact_question">Hacer una pregunta</a>
+        <a href="contact.html#infos" data-i18n="nav.contact_infos">Información práctica</a>
+        <a href="contact.html#faq" data-i18n="nav.contact_faq">FAQ</a>
+      </div>
+    </div>
   </nav>
   <div class="lang-switch lang-switch-header">
     <button class="lang-btn active" data-lang="fr">FR</button>
@@ -70,7 +114,7 @@
     </div>
   </section>
 
-  <section class="split section-pad" style="padding:88px 56px; display:grid; grid-template-columns:1.1fr 0.9fr; gap:64px; align-items:center; max-width:1200px; margin:0 auto;">
+  <section id="quoi" class="split section-pad" style="padding:88px 56px; display:grid; grid-template-columns:1.1fr 0.9fr; gap:64px; align-items:center; max-width:1200px; margin:0 auto;">
     <div style="display:flex; flex-direction:column; gap:20px;">
       <span class="eyebrow" data-i18n="methode.quoi_eyebrow">Qué es</span>
       <h2 style="font-size:32px;" data-i18n="methode.quoi_title">Un lenguaje estandarizado para comprender tu ciclo</h2>
@@ -83,7 +127,7 @@
     </div>
   </section>
 
-  <section class="section-pad" style="padding:88px 56px; background:var(--white); border-top:1px solid rgba(122,147,164,0.2); border-bottom:1px solid rgba(122,147,164,0.2);">
+  <section id="fonctionnement" class="section-pad" style="padding:88px 56px; background:var(--white); border-top:1px solid rgba(122,147,164,0.2); border-bottom:1px solid rgba(122,147,164,0.2);">
     <div style="max-width:1200px; margin:0 auto;">
       <div style="text-align:center; max-width:620px; margin:0 auto 56px;">
         <span class="eyebrow" data-i18n="methode.fonctionnement_eyebrow">El funcionamiento</span>
@@ -114,7 +158,7 @@
     </div>
   </section>
 
-  <section class="section-pad" style="padding:88px 56px; max-width:1200px; margin:0 auto;">
+  <section id="pourqui" class="section-pad" style="padding:88px 56px; max-width:1200px; margin:0 auto;">
     <div style="text-align:center; max-width:620px; margin:0 auto 56px;">
       <span class="eyebrow" data-i18n="methode.pourqui_eyebrow">Para quién</span>
       <h2 style="font-size:34px; margin-top:14px;" data-i18n="methode.pourqui_title">Un método, varios usos</h2>
@@ -143,7 +187,7 @@
     </div>
   </section>
 
-  <section style="background:var(--powder); padding:88px 56px;">
+  <section id="napro" style="background:var(--powder); padding:88px 56px;">
     <div class="split" style="max-width:1200px; margin:0 auto; display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center;">
       <div style="display:flex; flex-direction:column; gap:20px;">
         <span class="eyebrow" data-i18n="methode.napro_eyebrow">El vínculo médico</span>
@@ -163,7 +207,7 @@
     </div>
   </section>
 
-  <section class="section-pad" style="padding:88px 56px; max-width:1000px; margin:0 auto;">
+  <section id="fiabilite" class="section-pad" style="padding:88px 56px; max-width:1000px; margin:0 auto;">
     <div style="text-align:center; max-width:620px; margin:0 auto 48px;">
       <span class="eyebrow" data-i18n="methode.fiabilite_eyebrow">Fiabilidad</span>
       <h2 style="font-size:32px; margin-top:14px;" data-i18n="methode.fiabilite_title">Un método reconocido científicamente</h2>
@@ -185,7 +229,7 @@
     <p style="font-size:12px; color:var(--soft-blue); text-align:center; margin-top:24px; font-style:italic;" data-i18n="methode.fiabilite_source">Fuente: Journal of Reproductive Medicine, junio de 1998 — datos del Creighton Model FertilityCare System.</p>
   </section>
 
-  <section style="padding:88px 56px; max-width:820px; margin:0 auto;">
+  <section id="faq" style="padding:88px 56px; max-width:820px; margin:0 auto;">
     <div style="text-align:center; margin-bottom:48px;">
       <span class="eyebrow" data-i18n="methode.faq_eyebrow">FAQ</span>
       <h2 style="font-size:32px; margin-top:14px;" data-i18n="methode.faq_title">Sobre la fiabilidad y el funcionamiento</h2>
@@ -260,7 +304,7 @@
   <div class="footer-bottom" data-i18n="footer.copyright">© 2026 Camino Creighton — Pilar Chevallier Ramos B.</div>
 </footer>
 
-<script src="js/i18n.js?v=7"></script>
-<script src="js/main.js?v=7"></script>
+<script src="js/i18n.js?v=8"></script>
+<script src="js/main.js?v=8"></script>
 </body>
 </html>
