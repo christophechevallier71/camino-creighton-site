@@ -33,6 +33,13 @@ img{max-width:100%;}
 .price-badge{position:absolute;top:16px;right:16px;background:var(--primary);color:var(--white);font-size:11px;font-weight:600;letter-spacing:0.04em;padding:4px 10px;border-radius:20px;white-space:nowrap;}
 .price-strike{font-size:13px;color:var(--ink-soft);font-weight:500;margin-top:-8px;text-decoration:line-through;}
 .price-note{font-size:13px;color:var(--ink-soft);font-weight:500;margin-top:-8px;}
+.usage-card{padding:32px 24px;border:1px solid var(--blush);background:var(--white);display:flex;flex-direction:column;}
+.usage-more{font-size:13px;margin-top:14px;border-bottom:1px solid var(--primary-dark);background:transparent;padding:0;color:var(--primary-dark);align-self:flex-start;cursor:pointer;}
+.pourqui-modal{position:absolute;inset:0;background:rgba(51,66,75,0.45);z-index:300;display:flex;align-items:center;justify-content:center;padding:24px;border-radius:4px;}
+.pourqui-modal[hidden]{display:none;}
+.pourqui-modal-card{background:var(--white);max-width:440px;width:100%;padding:40px 36px;border-radius:4px;position:relative;max-height:80%;overflow-y:auto;display:flex;flex-direction:column;gap:16px;box-shadow:0 20px 48px rgba(51,66,75,0.22);}
+.pourqui-modal-close{position:absolute;top:16px;right:16px;width:32px;height:32px;display:flex;align-items:center;justify-content:center;background:transparent;border-radius:50%;cursor:pointer;}
+.pourqui-modal-panel[hidden]{display:none;}
 .price-kit{display:flex;align-items:center;gap:8px;padding:10px 12px;}
 .price-kit .check{color:var(--primary);font-size:15px;font-weight:700;}
 .stat-box{padding:32px 24px;text-align:center;border:1px dashed var(--soft-blue);}

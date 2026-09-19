@@ -64,6 +64,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // "Pour qui" info popups (Méthode page)
+  const pourquiSection = document.getElementById('pourqui');
+  if (pourquiSection) {
+    const modal = pourquiSection.querySelector('.pourqui-modal');
+    const panels = Array.from(pourquiSection.querySelectorAll('.pourqui-modal-panel'));
+    const openModal = (key) => {
+      panels.forEach(p => { p.hidden = p.dataset.cardPanel !== key; });
+      modal.hidden = false;
+    };
+    const closeModal = () => { modal.hidden = true; };
+    pourquiSection.querySelectorAll('.usage-more').forEach(btn => {
+      btn.addEventListener('click', () => openModal(btn.dataset.cardTarget));
+    });
+    modal.querySelector('.pourqui-modal-close').addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+  }
+
   // Scroll-reveal: fade up each top-level section as it enters view (skip the hero)
   const sections = Array.from(document.querySelectorAll('main > section')).slice(1);
   sections.forEach(el => el.classList.add('reveal'));

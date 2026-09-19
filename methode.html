@@ -15,7 +15,7 @@
 <link rel="icon" href="images/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap">
-<link rel="stylesheet" href="css/style.css?v=10">
+<link rel="stylesheet" href="css/style.css?v=11">
 </head>
 <body>
 
@@ -147,31 +147,100 @@
     </div>
   </section>
 
-  <section id="pourqui" class="section-pad" style="padding:88px 56px; max-width:1200px; margin:0 auto;">
+  <section id="pourqui" class="section-pad" style="padding:88px 56px; max-width:1200px; margin:0 auto; position:relative;">
     <div style="text-align:center; max-width:620px; margin:0 auto 56px;">
       <span class="eyebrow" data-i18n="methode.pourqui_eyebrow">Para quién</span>
       <h2 style="font-size:34px; margin-top:14px;" data-i18n="methode.pourqui_title">Un método, varios usos</h2>
     </div>
     <div class="grid-4" style="display:grid; grid-template-columns:repeat(4, 1fr); gap:24px;">
-      <div style="padding:32px 24px; border:1px solid var(--blush); background:var(--white);">
+      <div class="usage-card">
+        <svg width="30" height="30" viewBox="0 0 100 100" fill="none" stroke="var(--primary)" stroke-width="3"><path d="M50 15 A35 35 0 1 1 20 35"></path><path d="M12 28 L20 35 L28 25"></path></svg>
+        <h3 style="font-size:18px; margin-top:18px; margin-bottom:10px;" data-i18n="methode.usage_irreg_title">Ciclos irregulares</h3>
+        <p style="font-size:13.5px; color:var(--ink-soft); flex-grow:1;" data-i18n="methode.usage_irreg_text">Recuperar una visión clara de tu ciclo, aunque varíe mucho de un mes a otro.</p>
+        <button type="button" class="usage-more" data-card-target="irreg" data-i18n="methode.usage_more">Más información →</button>
+      </div>
+      <div class="usage-card">
+        <svg width="30" height="30" viewBox="0 0 100 100" fill="none" stroke="var(--primary)" stroke-width="3"><circle cx="50" cy="50" r="32"></circle><circle cx="38" cy="42" r="6"></circle><circle cx="58" cy="38" r="5"></circle><circle cx="45" cy="60" r="5"></circle><circle cx="62" cy="58" r="6"></circle></svg>
+        <h3 style="font-size:18px; margin-top:18px; margin-bottom:10px;" data-i18n="methode.usage_sopk_title">SOP</h3>
+        <p style="font-size:13.5px; color:var(--ink-soft); flex-grow:1;" data-i18n="methode.usage_sopk_text">Una herramienta de observación útil para comprender mejor un síndrome de ovario poliquístico.</p>
+        <button type="button" class="usage-more" data-card-target="sopk" data-i18n="methode.usage_more">Más información →</button>
+      </div>
+      <div class="usage-card">
+        <svg width="30" height="30" viewBox="0 0 100 100" fill="none" stroke="var(--primary)" stroke-width="3"><path d="M50 20 L50 45"></path><path d="M50 55 L50 80"></path><path d="M20 50 L45 50"></path><path d="M55 50 L80 50"></path><path d="M28 28 L44 44"></path><path d="M56 56 L72 72"></path><path d="M72 28 L56 44"></path><path d="M44 56 L28 72"></path></svg>
+        <h3 style="font-size:18px; margin-top:18px; margin-bottom:10px;" data-i18n="methode.usage_endo_title">Endometriosis</h3>
+        <p style="font-size:13.5px; color:var(--ink-soft); flex-grow:1;" data-i18n="methode.usage_endo_text">Observaciones que ayudan a objetivar el dolor y a orientar un diagnóstico.</p>
+        <button type="button" class="usage-more" data-card-target="endo" data-i18n="methode.usage_more">Más información →</button>
+      </div>
+      <div class="usage-card">
+        <svg width="30" height="30" viewBox="0 0 100 100" fill="none" stroke="var(--primary)" stroke-width="3"><rect x="20" y="22" width="60" height="60" rx="4"></rect><path d="M20 40 L80 40"></path><path d="M35 15 L35 28"></path><path d="M65 15 L65 28"></path><path d="M38 62 L62 62"></path></svg>
+        <h3 style="font-size:18px; margin-top:18px; margin-bottom:10px;" data-i18n="methode.usage_amen_title">Amenorrea</h3>
+        <p style="font-size:13.5px; color:var(--ink-soft); flex-grow:1;" data-i18n="methode.usage_amen_text">Comprender qué ocurre cuando el ciclo se detiene, para acompañarlo mejor.</p>
+        <button type="button" class="usage-more" data-card-target="amen" data-i18n="methode.usage_more">Más información →</button>
+      </div>
+      <div class="usage-card">
+        <svg width="30" height="30" viewBox="0 0 100 100" fill="none" stroke="var(--primary)" stroke-width="3"><path d="M50 82 C20 60 15 35 32 25 C42 19 50 28 50 35 C50 28 58 19 68 25 C85 35 80 60 50 82 Z"></path><path d="M68 18 A10 10 0 1 1 60 12"></path><path d="M64 10 L60 12 L64 16"></path></svg>
+        <h3 style="font-size:18px; margin-top:18px; margin-bottom:10px;" data-i18n="methode.usage_fc_title">Abortos espontáneos de repetición</h3>
+        <p style="font-size:13.5px; color:var(--ink-soft); flex-grow:1;" data-i18n="methode.usage_fc_text">Identificar una posible causa para acompañar mejor un próximo embarazo.</p>
+        <button type="button" class="usage-more" data-card-target="fc" data-i18n="methode.usage_more">Más información →</button>
+      </div>
+      <div class="usage-card">
         <svg width="30" height="30" viewBox="0 0 100 100" fill="none" stroke="var(--primary)" stroke-width="3"><path d="M50 20 L50 55"></path><path d="M50 55 C50 75 40 85 30 85"></path><path d="M50 55 C50 75 60 85 70 85"></path><path d="M25 20 C10 20 10 40 20 45 C28 49 35 40 35 30 C35 22 30 20 25 20 Z"></path><path d="M75 20 C90 20 90 40 80 45 C72 49 65 40 65 30 C65 22 70 20 75 20 Z"></path></svg>
         <h3 style="font-size:18px; margin-top:18px; margin-bottom:10px;" data-i18n="methode.usage1_title">Vigilar su salud</h3>
-        <p style="font-size:13.5px; color:var(--ink-soft);" data-i18n="methode.usage1_text">Detectar las señales de ciclos irregulares, post-píldora, o desequilibrios hormonales.</p>
+        <p style="font-size:13.5px; color:var(--ink-soft); flex-grow:1;" data-i18n="methode.usage1_text">Un panel diario de tu salud reproductiva, a cualquier edad de la vida.</p>
+        <button type="button" class="usage-more" data-card-target="usage1" data-i18n="methode.usage_more">Más información →</button>
       </div>
-      <div style="padding:32px 24px; border:1px solid var(--blush); background:var(--white);">
-        <svg width="30" height="30" viewBox="0 0 100 100" fill="none" stroke="var(--primary)" stroke-width="3"><circle cx="42" cy="42" r="24"></circle><path d="M60 60 L85 85"></path></svg>
-        <h3 style="font-size:18px; margin-top:18px; margin-bottom:10px;" data-i18n="methode.usage2_title">Identificar un trastorno</h3>
-        <p style="font-size:13.5px; color:var(--ink-soft);" data-i18n="methode.usage2_text">Endometriosis, SOP, abortos espontáneos de repetición: un punto de partida para la NaProTECHNOLOGY.</p>
-      </div>
-      <div style="padding:32px 24px; border:1px solid var(--blush); background:var(--white);">
+      <div class="usage-card">
         <svg width="30" height="30" viewBox="0 0 100 100" fill="none" stroke="var(--primary)" stroke-width="3"><path d="M20 55 C20 75 35 85 50 90 C65 85 80 75 80 55"></path><path d="M50 40 C45 25 25 25 25 42 C25 55 50 68 50 68 C50 68 75 55 75 42 C75 25 55 25 50 40 Z"></path></svg>
         <h3 style="font-size:18px; margin-top:18px; margin-bottom:10px;" data-i18n="methode.usage3_title">Evitar un embarazo</h3>
-        <p style="font-size:13.5px; color:var(--ink-soft);" data-i18n="methode.usage3_text">Una alternativa fiable y sin hormonas a la anticoncepción clásica.</p>
+        <p style="font-size:13.5px; color:var(--ink-soft); flex-grow:1;" data-i18n="methode.usage3_text">Una alternativa fiable y sin hormonas a la anticoncepción clásica.</p>
+        <button type="button" class="usage-more" data-card-target="usage3" data-i18n="methode.usage_more">Más información →</button>
       </div>
-      <div style="padding:32px 24px; border:1px solid var(--blush); background:var(--white);">
+      <div class="usage-card">
         <svg width="30" height="30" viewBox="0 0 100 100" fill="none" stroke="var(--primary)" stroke-width="3"><path d="M50 90 L50 30"></path><path d="M50 30 C35 30 25 20 25 10 C40 10 50 20 50 30 Z"></path><path d="M50 45 C65 45 75 35 75 25 C60 25 50 35 50 45 Z"></path><path d="M50 65 C35 65 25 55 25 45 C40 45 50 55 50 65 Z"></path></svg>
         <h3 style="font-size:18px; margin-top:18px; margin-bottom:10px;" data-i18n="methode.usage4_title">Buscar un embarazo</h3>
-        <p style="font-size:13.5px; color:var(--ink-soft);" data-i18n="methode.usage4_text">Identificar con precisión la ventana de fertilidad para optimizar las posibilidades de concepción.</p>
+        <p style="font-size:13.5px; color:var(--ink-soft); flex-grow:1;" data-i18n="methode.usage4_text">Identificar con precisión la ventana de fertilidad para optimizar las posibilidades de concepción.</p>
+        <button type="button" class="usage-more" data-card-target="usage4" data-i18n="methode.usage_more">Más información →</button>
+      </div>
+    </div>
+
+    <div class="pourqui-modal" hidden>
+      <div class="pourqui-modal-card">
+        <button type="button" class="pourqui-modal-close" aria-label="Cerrar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="2" stroke-linecap="round"><line x1="4" y1="4" x2="20" y2="20"></line><line x1="20" y1="4" x2="4" y2="20"></line></svg>
+        </button>
+        <div class="pourqui-modal-panel" data-card-panel="irreg" hidden>
+          <span class="eyebrow" data-i18n="methode.usage_irreg_title">Ciclos irregulares</span>
+          <p style="font-size:14.5px; color:var(--ink-soft); line-height:1.7; margin-top:8px;" data-i18n="methode.usage_irreg_detail">Los ciclos irregulares dificultan cualquier anticipación — ya sea para evitar un embarazo, buscarlo, o simplemente comprender lo que ocurre. El método Creighton no se basa en un cálculo de fechas: se apoya en la observación diaria de un biomarcador preciso, lo que lo hace fiable incluso cuando tus ciclos no siguen ningún patrón regular.</p>
+        </div>
+        <div class="pourqui-modal-panel" data-card-panel="sopk" hidden>
+          <span class="eyebrow" data-i18n="methode.usage_sopk_title">SOP</span>
+          <p style="font-size:14.5px; color:var(--ink-soft); line-height:1.7; margin-top:8px;" data-i18n="methode.usage_sopk_detail">El SOP suele acompañarse de ciclos largos o imprevisibles. Tus observaciones diarias aportan a tu médico datos concretos sobre tu funcionamiento hormonal real — la NaProTECHNOLOGY se apoya precisamente en este tipo de datos para orientar un tratamiento específico en lugar de solo sintomático.</p>
+        </div>
+        <div class="pourqui-modal-panel" data-card-panel="endo" hidden>
+          <span class="eyebrow" data-i18n="methode.usage_endo_title">Endometriosis</span>
+          <p style="font-size:14.5px; color:var(--ink-soft); line-height:1.7; margin-top:8px;" data-i18n="methode.usage_endo_detail">La endometriosis suele tardar en diagnosticarse. El seguimiento de tu ciclo puede poner de manifiesto patrones característicos (dolor cíclico, sangrados atípicos) que, compartidos con un médico formado en NaProTECHNOLOGY, ayudan a orientar el diagnóstico y el tratamiento.</p>
+        </div>
+        <div class="pourqui-modal-panel" data-card-panel="amen" hidden>
+          <span class="eyebrow" data-i18n="methode.usage_amen_title">Amenorrea</span>
+          <p style="font-size:14.5px; color:var(--ink-soft); line-height:1.7; margin-top:8px;" data-i18n="methode.usage_amen_detail">La ausencia de regla puede tener varios orígenes: post-píldora, estrés, pérdida de peso, deporte intensivo. Observar tu cuerpo a diario, incluso sin regla, aporta información útil para identificar la causa y acompañar una vuelta progresiva a un ciclo normal.</p>
+        </div>
+        <div class="pourqui-modal-panel" data-card-panel="fc" hidden>
+          <span class="eyebrow" data-i18n="methode.usage_fc_title">Abortos espontáneos de repetición</span>
+          <p style="font-size:14.5px; color:var(--ink-soft); line-height:1.7; margin-top:8px;" data-i18n="methode.usage_fc_detail">Tras varios abortos espontáneos, conocer con precisión tu ciclo — en particular la calidad de la fase post-ovulatoria — puede revelar pistas que la NaProTECHNOLOGY sabe explorar, para un acompañamiento más específico en un próximo embarazo.</p>
+        </div>
+        <div class="pourqui-modal-panel" data-card-panel="usage1" hidden>
+          <span class="eyebrow" data-i18n="methode.usage1_title">Vigilar su salud</span>
+          <p style="font-size:14.5px; color:var(--ink-soft); line-height:1.7; margin-top:8px;" data-i18n="methode.usage1_detail">Post-píldora, perimenopausia, lactancia, ciclos atípicos: en cada etapa de tu vida reproductiva, el seguimiento de tu ciclo te permite detectar pronto un desequilibrio y hablar de ello con datos concretos, en lugar de impresiones.</p>
+        </div>
+        <div class="pourqui-modal-panel" data-card-panel="usage3" hidden>
+          <span class="eyebrow" data-i18n="methode.usage3_title">Evitar un embarazo</span>
+          <p style="font-size:14.5px; color:var(--ink-soft); line-height:1.7; margin-top:8px;" data-i18n="methode.usage3_detail">Correctamente seguido, el método Creighton ofrece una alta tasa de eficacia para evitar un embarazo, sin hormonas ni dispositivos — siempre que se respete el protocolo de abstinencia o barrera durante la fase fértil.</p>
+        </div>
+        <div class="pourqui-modal-panel" data-card-panel="usage4" hidden>
+          <span class="eyebrow" data-i18n="methode.usage4_title">Buscar un embarazo</span>
+          <p style="font-size:14.5px; color:var(--ink-soft); line-height:1.7; margin-top:8px;" data-i18n="methode.usage4_detail">Al identificar cada día tus días fértiles con precisión, sola o acompañada de tu pareja, apuntas al momento adecuado en lugar de multiplicar los intentos al azar — un enfoque que ha demostrado su eficacia, incluso como complemento de un seguimiento médico en caso de dificultades.</p>
+        </div>
+        <a href="contact.html?mode=question" class="btn-ghost" style="width:fit-content; margin-top:4px;" data-i18n="methode.usage_modal_cta">Hacer una pregunta</a>
       </div>
     </div>
   </section>
@@ -293,7 +362,7 @@
   <div class="footer-bottom" data-i18n="footer.copyright">© 2026 Camino Creighton — Pilar Chevallier Ramos B.</div>
 </footer>
 
-<script src="js/i18n.js?v=10"></script>
-<script src="js/main.js?v=10"></script>
+<script src="js/i18n.js?v=11"></script>
+<script src="js/main.js?v=11"></script>
 </body>
 </html>
