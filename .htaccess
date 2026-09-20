@@ -1,0 +1,9 @@
+# Force https:// and the non-www host (avoids duplicate-content indexing issues)
+RewriteEngine On
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^(.*)$ https://caminocreighton.com/$1 [L,R=301]
+
+# Redirect /index.html to / (avoids a duplicate of the homepage)
+RewriteCond %{THE_REQUEST} /index\.html[\s?] [NC]
+RewriteRule ^index\.html$ / [L,R=301]
