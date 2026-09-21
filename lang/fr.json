@@ -25,6 +25,7 @@
     "lang_es_title": "Bientôt disponible en espagnol",
     "lang_en_title": "Bientôt disponible en anglais",
     "methode_quoi": "Qu'est-ce que c'est",
+    "methode_benefices": "Pourquoi cette méthode",
     "methode_fonctionnement": "Au quotidien",
     "methode_pourqui": "Pour qui",
     "methode_napro": "NaProTechnology",
@@ -44,7 +45,7 @@
   },
 
   "footer": {
-    "tagline": "Accompagnement individuel à la méthode Creighton, à Madrid et en visioconférence.",
+    "tagline": "Accompagnement individuel à la méthode Creighton, pas à pas.",
     "nav_heading": "Navigation",
     "info_heading": "Informations",
     "faq_link": "Questions fréquentes",
@@ -62,7 +63,7 @@
     "hero_text": "J'accompagne les couples et les femmes qui souhaitent chercher une grossesse, l'éviter naturellement ou simplement mieux comprendre leur santé hormonale — pas à pas.",
     "hero_cta": "Prendre rendez-vous",
     "hero_link": "Découvrir la méthode →",
-    "hero_badge": "La fertilité est un chemin",
+    "hero_badge": "Apprendre à se connaître, pas à pas.",
     "hero_image_alt": "Femme enceinte en famille, promenade dans un champ",
 
     "trust_1": "FertilityCare Practitioner",
@@ -91,7 +92,7 @@
 
     "chemin_eyebrow": "Le chemin",
     "chemin_title": "Comment se déroule l'accompagnement",
-    "step1_title": "Séance d'introduction",
+    "step1_title": "Session d'introduction",
     "step1_text": "Une présentation de la méthode (55 €) pour voir ensemble si elle vous correspond.",
     "step2_title": "Apprentissage",
     "step2_text": "Les séances individuelles pour apprendre à observer et noter votre cycle.",
@@ -99,6 +100,7 @@
     "step3_text": "Des rendez-vous de suivi pour affiner votre compréhension et répondre à vos questions.",
     "step4_title": "Autonomie",
     "step4_text": "Vous maîtrisez votre cycle en toute confiance, avec un suivi ponctuel si besoin.",
+    "chemin_cta": "Découvrir l'accompagnement",
 
     "apropos_eyebrow": "À propos",
     "apropos_title": "Bonjour, je suis Pilar",
@@ -136,7 +138,7 @@
     "faq_q4": "Les séances se déroulent-elles en ligne ?",
     "faq_a4": "Les séances sont proposées en cabinet à Madrid ou en visioconférence, selon votre préférence et votre lieu de résidence.",
 
-    "cta_title": "La fertilité est un chemin",
+    "cta_title": "Apprendre à se connaître, pas à pas.",
     "cta_button": "Réserver un échange"
   },
 
@@ -150,6 +152,15 @@
     "quoi_text1": "Développée par le Dr. Thomas Hilgers au Saint Paul VI Institute, la méthode Creighton (Creighton Model FertilityCare System) enseigne à observer et noter chaque jour un biomarqueur précis : la glaire cervicale. Elle repose sur une échelle d'observation standardisée, identique partout dans le monde, ce qui la rend reproductible et vérifiable par une monitrice formée.",
     "quoi_text2": "Ce même langage sert aussi de base à la <strong style=\"font-weight:500; color:var(--ink);\">NaProTECHNOLOGY</strong>, une approche médicale qui utilise vos observations pour diagnostiquer et traiter les causes sous-jacentes de troubles hormonaux ou de fertilité — plutôt que de simplement masquer les symptômes.",
     "quoi_image_alt": "Carnet de suivi de la méthode Creighton",
+
+    "benefices_eyebrow": "Pourquoi cette méthode",
+    "benefices_title": "Une approche différente",
+    "benefices_card1_title": "Sans hormones, scientifique",
+    "benefices_card1_text": "Une méthode standardisée et reconnue, sans pilule ni dispositif — seulement l'observation quotidienne de votre corps.",
+    "benefices_card2_title": "Valable à chaque étape de la vie",
+    "benefices_card2_text": "Post-pilule, allaitement, péri-ménopause, cycles irréguliers : la méthode s'adapte à votre situation, à tout âge.",
+    "benefices_card3_title": "Un seul apprentissage, plusieurs usages",
+    "benefices_card3_text": "Chercher une grossesse, l'éviter naturellement, ou simplement mieux vous connaître — la même méthode s'adapte à votre objectif.",
 
     "fonctionnement_eyebrow": "Le fonctionnement",
     "fonctionnement_title": "Au quotidien",
@@ -224,7 +235,6 @@
     "faq_a5": "Oui, tout à fait. L'implication du partenaire est encouragée mais non obligatoire — beaucoup de femmes suivent la méthode seules, notamment pour la surveillance de leur santé hormonale.",
 
     "cta_title": "Prête à commencer votre chemin ?",
-    "cta_button1": "Découvrir l'accompagnement",
     "cta_button2": "Prendre rendez-vous"
   },
 
@@ -243,7 +253,7 @@
 
     "deroule_eyebrow": "Le déroulé",
     "deroule_title": "Le chemin de la méthode Creighton",
-    "deroule_text": "Après la séance d'introduction, 8 séances de suivi rythment votre première année : les 4 premières chaque 2 semaines (les 2 mois les plus intensifs de l'apprentissage), puis les sessions suivantes s'espacent progressivement jusqu'à un suivi tous les 3 mois.<br>Passé un an, un rendez-vous tous les 6 à 12 mois suffit à entretenir votre autonomie.",
+    "deroule_text": "Après la session d'introduction, 8 séances de suivi rythment votre première année : les 4 premières chaque 2 semaines (les 2 mois les plus intensifs de l'apprentissage), puis les sessions suivantes s'espacent progressivement jusqu'à un suivi tous les 3 mois.<br>Passé un an, un rendez-vous tous les 6 à 12 mois suffit à entretenir votre autonomie.",
     "deroule_intro_label": "Intro",
     "deroule_footnote": "Puis un rendez-vous tous les 6 à 12 mois pour entretenir votre autonomie.",
 
@@ -260,12 +270,12 @@
     "prix3_label": "COURS COMPLET",
     "prix3_amount": "410 €",
     "prix3_full": "455 € en paiement classique",
-    "prix3_text": "Séance d'introduction + 8 séances de suivi sur un an.",
+    "prix3_text": "Session d'introduction + 8 séances de suivi sur un an.",
     "prix4_badge": "−5 %",
     "prix4_label": "COURS BASIC",
     "prix4_amount": "260 €",
     "prix4_full": "275 € en paiement classique",
-    "prix4_text": "Séance d'introduction + 4 premières séances de suivi.",
+    "prix4_text": "Session d'introduction + 4 premières séances de suivi.",
     "prix_kit_inclus": "Kit FertilityCare inclus",
     "prix_reserver": "Réserver",
     "tarifs_footnote1": "Kit FertilityCare (manuel, graphique, estampas) : 30 € · Remplacement gráfica : 2 € · Estampas : 4,5 € · Les évaluations de grossesse sont gratuites pour les clientes actives.",
@@ -340,7 +350,7 @@
   "contact": {
     "hero_eyebrow": "Contact",
     "hero_title": "Choisissez ce qui vous correspond",
-    "hero_text": "Un premier échange téléphonique gratuit pour cadrer votre besoin — puis, si vous le souhaitez, la séance d'introduction pour découvrir la méthode en détail.",
+    "hero_text": "Un premier échange téléphonique gratuit pour cadrer votre besoin — puis, si vous le souhaitez, la session d'introduction pour découvrir la méthode en détail.",
 
     "choix_eyebrow": "Comment puis-je vous aider",
     "path_reserver_title": "Réserver une séance",
@@ -354,8 +364,8 @@
     "form_nom": "Nom",
     "form_email": "Email",
     "form_formule": "Formule souhaitée",
-    "form_formule_opt1": "Séance d'introduction — 55 €",
-    "form_formule_opt2": "Follow-up — 45 €",
+    "form_formule_opt1": "Session d'introduction — 55 €",
+    "form_formule_opt2": "Follow-up — 45 € (55 € pour le 1er)",
     "form_formule_opt3": "Cours Complet — 455 € (410 € en paiement anticipé)",
     "form_formule_opt4": "Cours Basic — 275 € (260 € en paiement anticipé)",
     "form_formule_opt5": "Je ne sais pas encore / à discuter",

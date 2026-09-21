@@ -25,6 +25,7 @@
     "lang_es_title": "Próximamente en español",
     "lang_en_title": "Próximamente en inglés",
     "methode_quoi": "Qué es",
+    "methode_benefices": "Por qué este método",
     "methode_fonctionnement": "En el día a día",
     "methode_pourqui": "Para quién",
     "methode_napro": "NaProTECHNOLOGY",
@@ -44,7 +45,7 @@
   },
 
   "footer": {
-    "tagline": "Acompañamiento individual al método Creighton, en Madrid y por videollamada.",
+    "tagline": "Acompañamiento individual al método Creighton, paso a paso.",
     "nav_heading": "Navegación",
     "info_heading": "Información",
     "faq_link": "Preguntas frecuentes",
@@ -62,7 +63,7 @@
     "hero_text": "Acompaño a parejas y mujeres que desean buscar un embarazo, evitarlo de forma natural o simplemente comprender mejor su salud hormonal — paso a paso.",
     "hero_cta": "Reservar cita",
     "hero_link": "Descubrir el método →",
-    "hero_badge": "La fertilidad es un camino",
+    "hero_badge": "Aprender a conocerte, paso a paso.",
     "hero_image_alt": "Mujer embarazada en familia, paseando por un campo",
 
     "trust_1": "FertilityCare Practitioner",
@@ -99,6 +100,7 @@
     "step3_text": "Citas de seguimiento para afinar tu comprensión y responder a tus preguntas.",
     "step4_title": "Autonomía",
     "step4_text": "Dominas tu ciclo con total confianza, con un seguimiento puntual si lo necesitas.",
+    "chemin_cta": "Descubrir el acompañamiento",
 
     "apropos_eyebrow": "Sobre mí",
     "apropos_title": "Hola, soy Pilar",
@@ -136,7 +138,7 @@
     "faq_q4": "¿Las sesiones se realizan en línea?",
     "faq_a4": "Las sesiones se ofrecen en consulta en Madrid o por videollamada, según tu preferencia y tu lugar de residencia.",
 
-    "cta_title": "La fertilidad es un camino",
+    "cta_title": "Aprender a conocerte, paso a paso.",
     "cta_button": "Reservar una llamada"
   },
 
@@ -150,6 +152,15 @@
     "quoi_text1": "Desarrollado por el Dr. Thomas Hilgers en el Saint Paul VI Institute, el método Creighton (Creighton Model FertilityCare System) enseña a observar y anotar cada día un biomarcador preciso: el moco cervical. Se basa en una escala de observación estandarizada, idéntica en todo el mundo, lo que lo hace reproducible y verificable por una monitora formada.",
     "quoi_text2": "Este mismo lenguaje sirve también de base a la <strong style=\"font-weight:500; color:var(--ink);\">NaProTECHNOLOGY</strong>, un enfoque médico que utiliza tus observaciones para diagnosticar y tratar las causas subyacentes de los trastornos hormonales o de fertilidad — en lugar de simplemente enmascarar los síntomas.",
     "quoi_image_alt": "Cuaderno de seguimiento del método Creighton",
+
+    "benefices_eyebrow": "Por qué este método",
+    "benefices_title": "Un enfoque diferente",
+    "benefices_card1_title": "Sin hormonas, científico",
+    "benefices_card1_text": "Un método estandarizado y reconocido, sin píldora ni dispositivo — solo la observación diaria de tu cuerpo.",
+    "benefices_card2_title": "Válido en cada etapa de la vida",
+    "benefices_card2_text": "Post-píldora, lactancia, perimenopausia, ciclos irregulares: el método se adapta a tu situación, a cualquier edad.",
+    "benefices_card3_title": "Un solo aprendizaje, varios usos",
+    "benefices_card3_text": "Buscar un embarazo, evitarlo de forma natural, o simplemente conocerte mejor — el mismo método se adapta a tu objetivo.",
 
     "fonctionnement_eyebrow": "El funcionamiento",
     "fonctionnement_title": "En el día a día",
@@ -224,7 +235,6 @@
     "faq_a5": "Sí, por supuesto. Se anima a implicar a la pareja, pero no es obligatorio — muchas mujeres siguen el método solas, especialmente para vigilar su salud hormonal.",
 
     "cta_title": "¿Lista para empezar tu camino?",
-    "cta_button1": "Descubrir el acompañamiento",
     "cta_button2": "Reservar cita"
   },
 
@@ -355,7 +365,7 @@
     "form_email": "Email",
     "form_formule": "Plan deseado",
     "form_formule_opt1": "Sesión de introducción — 55 €",
-    "form_formule_opt2": "Follow-up — 45 €",
+    "form_formule_opt2": "Follow-up — 45 € (55 € el primero)",
     "form_formule_opt3": "Curso Completo — 455 € (410 € en pago anticipado)",
     "form_formule_opt4": "Curso Basic — 275 € (260 € en pago anticipado)",
     "form_formule_opt5": "Aún no lo sé / a discutir",
