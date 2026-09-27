@@ -68,7 +68,6 @@
 
     "trust_1": "FertilityCare Practitioner",
     "trust_2": "Formée au Saint Paul VI Institute, USA",
-    "trust_3": "Méthode scientifique et naturelle",
     "trust_4": "Consultations en présentiel ou en visio",
 
     "besoins_eyebrow": "Pour qui",
@@ -259,7 +258,7 @@
 
     "tarifs_eyebrow": "Formules",
     "tarifs_title": "Tarifs et formules",
-    "prix1_label": "SÉANCE D'INTRODUCTION",
+    "prix1_label": "SESSION D'INTRODUCTION",
     "prix1_amount": "55 €",
     "prix1_text": "Présentation de 90 min :<br>vue d'ensemble de la méthode, sans engagement à poursuivre.",
     "prix2_label": "RÉSERVER UN FOLLOW UP",
@@ -297,7 +296,7 @@
     "faq_eyebrow": "FAQ",
     "faq_title": "Sur l'organisation des séances",
     "faq_q1": "Combien de séances faut-il prévoir au total ?",
-    "faq_a1": "Le programme complet compte 8 séances de suivi sur un an, après la séance introductoria : les 4 premières toutes les 2 semaines, puis en semaine 12, et enfin tous les 3 mois. Au-delà d'un an, un suivi tous les 6 à 12 mois suffit généralement.",
+    "faq_a1": "Le programme complet compte 8 séances de suivi sur un an, après la session d'introduction : les 4 premières toutes les 2 semaines, puis en semaine 12, et enfin tous les 3 mois. Au-delà d'un an, un suivi tous les 6 à 12 mois suffit généralement.",
     "faq_q2": "Les séances sont-elles remboursées par la mutuelle ?",
     "faq_a2": "Actuellement, les séances ne sont pas remboursées par les mutuelles.",
     "faq_q3": "Comment se passe le paiement des séances ?",
