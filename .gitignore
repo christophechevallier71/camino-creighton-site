@@ -32,6 +32,17 @@
 !/images/
 !/images/**
 
+# Working files kept next to the site images but not part of the site:
+# inspiration folder, heavy original photos, and the "… - style hero" copies
+# (the site uses the clean-named *-hero.jpg versions instead).
+/images/Images d'inspiration/
+/images/Travail.JPG
+/images/Travail sur tableau 1.JPG
+/images/Travail sur tableau 2.JPG
+/images/Profil Web 1.JPG
+/images/Tableau Creighton.jpg
+/images/* - style hero.jpg
+
 !/lib/
 !/lib/**
 
