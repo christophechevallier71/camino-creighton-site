@@ -139,3 +139,14 @@ input:focus, select:focus, textarea:focus{outline:none; border-color:var(--prima
 .path-btn svg{display:block;}
 .contact-form{display:none;}
 .contact-form.active{display:flex;flex-direction:column;}
+
+/* ---- Cotignac : buzón de San José ---- */
+.check{display:flex;align-items:flex-start;gap:10px;margin-bottom:0;font-size:13.5px;letter-spacing:0;text-transform:none;color:var(--ink-soft);cursor:pointer;}
+.check input{width:16px;height:16px;margin-top:3px;padding:0;flex-shrink:0;accent-color:var(--primary);}
+input[type="file"]{padding:14px;background:var(--cream);border:1px dashed var(--soft-blue);font-size:13px;cursor:pointer;}
+.file-hint{margin-top:8px;font-size:12.5px;color:var(--ink-soft);}
+.hp-field{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;}
+.form-status{margin-top:20px;padding:14px 18px;border-radius:2px;font-size:14px;text-align:center;}
+.form-status[hidden]{display:none;}
+.form-status.ok{background:#EAF2EE;color:#2F5D46;border:1px solid #BFD8CA;}
+.form-status.err{background:#F8ECEC;color:#8A3B3B;border:1px solid #E5C4C4;}

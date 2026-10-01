@@ -65,6 +65,31 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
+  // Cotignac page: letter form (status message after buzon.php redirects back, 8 MB check, page language)
+  const cartaForm = document.getElementById('form-carta');
+  if (cartaForm) {
+    const showStatus = (code) => {
+      cartaForm.querySelectorAll('[data-carta-msg]').forEach(el => { el.hidden = el.dataset.cartaMsg !== code; });
+    };
+    const code = new URLSearchParams(window.location.search).get('carta');
+    if (code) {
+      showStatus(code);
+      if (code === 'ok') cartaForm.reset();
+      cartaForm.scrollIntoView({ block: 'center' });
+      if (window.history.replaceState) window.history.replaceState(null, '', window.location.pathname + '#carta');
+    }
+    const fileInput = cartaForm.querySelector('input[type="file"]');
+    if (fileInput) {
+      fileInput.addEventListener('change', () => {
+        const f = fileInput.files[0];
+        if (f && f.size > 8 * 1024 * 1024) { fileInput.value = ''; showStatus('toobig'); } else { showStatus(''); }
+      });
+    }
+    cartaForm.addEventListener('submit', () => {
+      const lang = cartaForm.querySelector('input[name="lang"]');
+      if (lang) lang.value = (document.documentElement.lang || 'es').slice(0, 2);
+    });
+  }
   // Scroll-reveal: fade up each top-level section as it enters view (skip the hero)
   const sections = Array.from(document.querySelectorAll('main > section')).slice(1);
   sections.forEach(el => el.classList.add('reveal'));
