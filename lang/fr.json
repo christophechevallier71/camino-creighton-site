@@ -51,6 +51,7 @@
     "cotignac_porque": "Pourquoi envoyer une lettre ?",
     "cotignac_carta": "Envoyer ma lettre",
     "cotignac_pilar": "Témoignages de Pilar",
+    "cotignac_gracias": "Prières exaucées",
     "contact_reserver": "Réserver une séance",
     "contact_question": "Poser une question",
     "contact_faq": "FAQ"
@@ -500,6 +501,15 @@
     "pilar_alt1": "Les panneaux du sanctuaire, brûlés par l'incendie",
     "pilar_alt2": "Un enfant porte les lettres jusqu'à la statue de saint Joseph",
     "pilar_alt3": "Les lettres, remises devant la statue de saint Joseph",
-    "pilar_quote": "Lors de notre voyage de 2026, les terribles incendies qui ont touché Cotignac avaient ravagé une grande partie des abords des sanctuaires. Malgré cela, nous avons pu porter jusqu'à saint Joseph les lettres que vous nous aviez confiées. Nous avons été les premiers pèlerins à pouvoir entrer à nouveau dans le sanctuaire."
+    "pilar_quote": "Lors de notre voyage de 2026, les terribles incendies qui ont touché Cotignac avaient ravagé une grande partie des abords des sanctuaires. Malgré cela, nous avons pu porter jusqu'à saint Joseph les lettres que vous nous aviez confiées. Nous avons été les premiers pèlerins à pouvoir entrer à nouveau dans le sanctuaire.",
+    "grace_eyebrow": "Prières exaucées",
+    "grace_title": "Ils ont été exaucés",
+    "grace_tag": "Exemple",
+    "grace_q1": "J'ai écrit ma lettre avec beaucoup de doutes, après deux ans à espérer une grossesse. Quelques mois plus tard, nous avons appris que nous attendions un bébé. Merci, saint Joseph.",
+    "grace_q2": "Je n'attendais rien de précis : je voulais seulement lui confier mon inquiétude pour mon fils. J'ai reçu une paix que je ne sais pas expliquer, et cette semaine-là, tout a commencé à se remettre en ordre.",
+    "grace_q3": "Mon mari était sans emploi depuis un an. J'ai envoyé la lettre presque sans y croire, et quelques semaines plus tard on lui a proposé un poste. Je n'oublierai jamais ce jour.",
+    "grace_s1": "— Claire, Lyon",
+    "grace_s2": "— Sophie, Nantes",
+    "grace_s3": "— Thomas, Bordeaux"
   }
 }

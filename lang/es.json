@@ -51,6 +51,7 @@
     "cotignac_porque": "Por qué enviar una carta",
     "cotignac_carta": "Enviar mi carta",
     "cotignac_pilar": "Testimonios de Pilar",
+    "cotignac_gracias": "Gracias recibidas",
     "contact_reserver": "Reservar una sesión",
     "contact_question": "Hacer una pregunta",
     "contact_faq": "FAQ"
@@ -500,6 +501,15 @@
     "pilar_alt1": "Los carteles del santuario, quemados por el incendio",
     "pilar_alt2": "Un niño lleva las cartas hasta la estatua de San José",
     "pilar_alt3": "Las cartas, entregadas ante la estatua de San José",
-    "pilar_quote": "En nuestro viaje de 2026, los terribles incendios que afectaron a Cotignac habían arrasado buena parte de los alrededores de los santuarios. A pesar de ello, pudimos llevar hasta San José las cartas que nos habíais confiado. Fuimos los primeros peregrinos en poder volver a entrar en el santuario."
+    "pilar_quote": "En nuestro viaje de 2026, los terribles incendios que afectaron a Cotignac habían arrasado buena parte de los alrededores de los santuarios. A pesar de ello, pudimos llevar hasta San José las cartas que nos habíais confiado. Fuimos los primeros peregrinos en poder volver a entrar en el santuario.",
+    "grace_eyebrow": "Gracias recibidas",
+    "grace_title": "Han sido escuchados",
+    "grace_tag": "Ejemplo",
+    "grace_q1": "Escribí mi carta con muchas dudas, después de dos años buscando un embarazo. Unos meses más tarde supimos que esperábamos un bebé. Gracias, San José.",
+    "grace_q2": "No esperaba nada concreto: solo quería confiarle mi preocupación por mi hijo. Recibí una paz que no sé explicar, y aquella semana todo empezó a ordenarse.",
+    "grace_q3": "Mi marido llevaba un año sin trabajo. Envié la carta casi sin creer, y a las pocas semanas le ofrecieron un puesto. Nunca olvidaré ese día.",
+    "grace_s1": "— Marta, Madrid",
+    "grace_s2": "— Lucía, Valencia",
+    "grace_s3": "— Javier, Sevilla"
   }
 }
