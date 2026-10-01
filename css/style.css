@@ -44,8 +44,12 @@ img{max-width:100%;}
 .price-kit .check{color:var(--primary);font-size:15px;font-weight:700;}
 .stat-box{padding:32px 24px;text-align:center;border:1px dashed var(--soft-blue);}
 
-.card, .price-card, .stat-box{transition:transform .25s ease, box-shadow .25s ease;}
-.card:hover, .price-card:hover, .stat-box:hover{transform:translateY(-3px); box-shadow:0 14px 28px rgba(51,66,75,0.08);}
+/* ---- Ressources page ---- */
+.placeholder-img{width:100%;aspect-ratio:4/3;border-radius:4px;background:linear-gradient(160deg, var(--blush), var(--powder));display:flex;align-items:center;justify-content:center;}
+.tag{display:inline-block;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary-dark);background:var(--cream);padding:4px 10px;border-radius:20px;font-weight:500;}
+
+.card, .price-card, .stat-box, .book-card, .link-card{transition:transform .25s ease, box-shadow .25s ease;}
+.card:hover, .price-card:hover, .stat-box:hover, .book-card:hover, .link-card:hover{transform:translateY(-3px); box-shadow:0 14px 28px rgba(51,66,75,0.08);}
 
 /* ---- FAQ accordion ---- */
 .faq-item{border-bottom:1px solid var(--blush);}
@@ -102,8 +106,8 @@ body{animation:page-fade-in .5s ease both;}
 @media (prefers-reduced-motion: reduce){
   body{animation:none;}
   .reveal{opacity:1; transform:none; transition:none;}
-  .card, .price-card, .stat-box{transition:none;}
-  .card:hover, .price-card:hover, .stat-box:hover{transform:none;}
+  .card, .price-card, .stat-box, .book-card, .link-card{transition:none;}
+  .card:hover, .price-card:hover, .stat-box:hover, .book-card:hover, .link-card:hover{transform:none;}
 }
 
 /* ---- Responsive ---- */
