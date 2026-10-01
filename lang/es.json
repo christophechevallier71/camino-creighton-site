@@ -10,6 +10,8 @@
     "apropos_description": "FertilityCare Practitioner certificada por el Saint Paul VI Institute, Pilar lleva más de tres años acompañando a mujeres y parejas en el aprendizaje del método Creighton, en Madrid y por videollamada.",
     "contact_title": "Contacto y citas | Camino Creighton",
     "contact_description": "Reserva una cita o una primera llamada telefónica gratuita para descubrir el método Creighton con Pilar Ramos Beytia, en Madrid o por videollamada.",
+    "ressources_title": "Recursos | Camino Creighton",
+    "ressources_description": "Artículos, libros recomendados y enlaces útiles sobre el método Creighton, la fertilidad natural y la salud hormonal.",
     "merci_title": "Gracias | Camino Creighton"
   },
 
@@ -39,6 +41,9 @@
     "apropos_parcours": "Mi trayectoria",
     "apropos_valeurs": "Mis valores",
     "apropos_formation": "Certificaciones",
+    "ressources_articles": "Artículos",
+    "ressources_livres": "Libros",
+    "ressources_liens": "Enlaces útiles",
     "contact_reserver": "Reservar una sesión",
     "contact_question": "Hacer una pregunta",
     "contact_faq": "FAQ"
@@ -55,6 +60,19 @@
     "contact_heading": "Contacto",
     "address": "Madrid, España",
     "copyright": "© 2026 Camino Creighton — Pilar Chevallier Ramos Beytia."
+  },
+
+  "ressources": {
+    "hero_eyebrow": "Recursos",
+    "hero_title": "Para ir más lejos",
+    "hero_text": "Artículos, libros recomendados y enlaces útiles para comprender mejor tu ciclo, el método Creighton y la salud hormonal.",
+    "articles_eyebrow": "Blog",
+    "articles_title": "Últimos artículos",
+    "soon": "Próximamente",
+    "livres_eyebrow": "Libros",
+    "livres_title": "Libros recomendados",
+    "liens_eyebrow": "Para ir más lejos",
+    "liens_title": "Enlaces útiles"
   },
 
   "home": {
