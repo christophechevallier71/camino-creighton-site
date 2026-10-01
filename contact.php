@@ -15,8 +15,18 @@ use PHPMailer\PHPMailer\Exception;
 
 $to = "pilar.fertilitycare@gmail.com";
 
+// The mail is plain text, so values must NOT be HTML-escaped (that turned
+// apostrophes, quotes and "&" into "&#039;", "&quot;", "&amp;" in the inbox).
+// Only control characters are stripped: newlines in names/email would allow
+// header injection, and in free text they are normalised to "\n".
 function clean($v) {
-  return htmlspecialchars(trim($v ?? ''), ENT_QUOTES, 'UTF-8');
+  $v = trim((string)($v ?? ''));
+  $v = preg_replace('/\r\n?/', "\n", $v);
+  return preg_replace('/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/u', '', $v);
+}
+
+function clean_line($v) {
+  return trim(preg_replace('/\s+/u', ' ', clean($v)));
 }
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
@@ -24,10 +34,10 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
   exit;
 }
 
-$type = clean($_POST['type'] ?? 'reservation');
-$prenom = clean($_POST['prenom'] ?? '');
-$nom = clean($_POST['nom'] ?? '');
-$email = clean($_POST['email'] ?? '');
+$type = clean_line($_POST['type'] ?? 'reservation');
+$prenom = clean_line($_POST['prenom'] ?? '');
+$nom = clean_line($_POST['nom'] ?? '');
+$email = clean_line($_POST['email'] ?? '');
 
 if ($prenom === '' || $nom === '' || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
   header('Location: contact.html?error=1');
@@ -42,8 +52,8 @@ if ($type === 'question') {
         . "Email : $email\n"
         . "Question : $message\n";
 } else {
-  $formule = clean($_POST['formule'] ?? '');
-  $modalite = clean($_POST['modalite'] ?? '');
+  $formule = clean_line($_POST['formule'] ?? '');
+  $modalite = clean_line($_POST['modalite'] ?? '');
   $dispo = clean($_POST['dispo'] ?? '');
   $subject = "Nouvelle demande de réservation — Camino Creighton";
   $body = "Prénom : $prenom\n"
@@ -69,6 +79,7 @@ if (file_exists($configFile)) {
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port = $config['port'];
     $mail->CharSet = 'UTF-8';
+    $mail->Encoding = 'base64'; // accents survive any relay, no 8-bit surprises
 
     $mail->setFrom($config['username'], 'Camino Creighton');
     $mail->addAddress($to);
@@ -88,7 +99,7 @@ if (file_exists($configFile)) {
   $headers = "From: Camino Creighton <no-reply@caminocreighton.com>\r\n"
            . "Reply-To: $email\r\n"
            . "Content-Type: text/plain; charset=UTF-8\r\n";
-  $sent = mail($to, $subject, $body, $headers);
+  $sent = mail($to, mb_encode_mimeheader($subject, 'UTF-8'), $body, $headers);
 }
 
 header('Location: ' . ($sent ? 'merci.html' : 'contact.html?error=1'));
