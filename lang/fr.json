@@ -53,8 +53,7 @@
     "cotignac_pilar": "Témoignages de Pilar",
     "cotignac_gracias": "Prières exaucées",
     "contact_reserver": "Réserver une séance",
-    "contact_question": "Poser une question",
-    "contact_faq": "FAQ"
+    "contact_question": "Poser une question"
   },
 
   "footer": {
@@ -351,6 +350,16 @@
     "faq_a3": "Les séances se règlent par virement bancaire au moins 24h avant pour confirmer le rendez-vous. En cas de séance en ligne, le graphique doit être envoyé par email 24h avant.",
     "faq_q4": "Puis-je poser des questions entre deux séances ?",
     "faq_a4": "Oui, je reste disponible par message pendant toute la durée du suivi pour répondre à vos questions entre les rendez-vous. Ce service est compris dans le prix des packs.",
+    "faq_q5": "Les séances se font-elles en présentiel ou en visio ?",
+    "faq_a5": "En présentiel à Madrid ou en visioconférence, selon votre préférence et votre lieu de résidence. Vous pouvez aussi alterner les deux formats.",
+    "faq_q6": "Je n'habite pas en Espagne, est-ce un problème ?",
+    "faq_a6": "Non, l'accompagnement à distance fonctionne aussi bien qu'en présentiel, il faut simplement tenir compte du décalage horaire pour organiser les séances.",
+    "faq_q7": "Dans quelles langues se déroulent les séances ?",
+    "faq_a7": "En espagnol, en français ou en anglais, selon la demande.",
+    "faq_q8": "Sous combien de temps aurai-je une réponse ?",
+    "faq_a8": "Je réponds à chaque demande sous 48h ouvrées pour convenir ensemble d'un premier échange.",
+    "faq_q9": "Comment fonctionne le paiement ?",
+    "faq_a9": "Par virement bancaire ou PayPal, à régler au moins 24h avant chaque séance pour la confirmer. Les coordonnées bancaires sont envoyées après votre demande.",
 
     "cta_title": "Envie d'en parler ?",
     "cta_button": "ÉCHANGEONS"
@@ -409,7 +418,7 @@
     "wa_eyebrow": "WhatsApp",
     "wa_text": "Écrivez-moi directement, je vous répondrai dès que possible.",
     "wa_button": "Envoyer un message WhatsApp",
-    "wa_link": "https://wa.me/34622229689?text=Bonjour%20Pilar%2C%20j%27aimerais%20vous%20poser%20une%20question.",
+    "wa_link": "https://wa.me/33767333616?text=Bonjour%20Pilar%2C%20j%27aimerais%20vous%20poser%20une%20question.",
 
 
     "form_prenom": "Prénom",
@@ -440,20 +449,8 @@
     "infos_instagram_label": "Instagram",
 
     "reassurance1": "Premier échange gratuit, sans engagement",
-    "reassurance2": "Réponse sous 48h",
+    "reassurance2": "Réponse sous 48h"
 
-    "faq_eyebrow": "FAQ",
-    "faq_title": "Sur les aspects pratiques",
-    "faq_q1": "Les séances se font-elles en présentiel ou en visio ?",
-    "faq_a1": "En présentiel à Madrid ou en visioconférence, selon votre préférence et votre lieu de résidence. Vous pouvez aussi alterner les deux formats.",
-    "faq_q2": "Je n'habite pas en Espagne, est-ce un problème ?",
-    "faq_a2": "Non, l'accompagnement à distance fonctionne aussi bien qu'en présentiel, il faut simplement tenir compte du décalage horaire pour organiser les séances.",
-    "faq_q3": "Dans quelles langues se déroulent les séances ?",
-    "faq_a3": "En espagnol, en français ou en anglais, selon la demande.",
-    "faq_q4": "Sous combien de temps aurai-je une réponse ?",
-    "faq_a4": "Je réponds à chaque demande sous 48h ouvrées pour convenir ensemble d'un premier échange.",
-    "faq_q5": "Comment fonctionne le paiement ?",
-    "faq_a5": "Par virement bancaire ou PayPal, à régler au moins 24h avant chaque séance pour la confirmer. Les coordonnées bancaires sont envoyées après votre demande."
   },
 
   "merci": {

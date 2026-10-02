@@ -53,8 +53,7 @@
     "cotignac_pilar": "Testimonios de Pilar",
     "cotignac_gracias": "Gracias recibidas",
     "contact_reserver": "Reservar una sesión",
-    "contact_question": "Hacer una pregunta",
-    "contact_faq": "FAQ"
+    "contact_question": "Hacer una pregunta"
   },
 
   "footer": {
@@ -351,6 +350,16 @@
     "faq_a3": "Las sesiones se pagan por transferencia bancaria al menos 24h antes para confirmar la cita. En caso de sesión en línea, la gráfica debe enviarse por email 24h antes.",
     "faq_q4": "¿Puedo hacer preguntas entre dos sesiones?",
     "faq_a4": "Sí, sigo disponible por mensaje durante todo el seguimiento para responder a tus preguntas entre citas. Este servicio está incluido en el precio de los packs.",
+    "faq_q5": "¿Las sesiones son presenciales o por videollamada?",
+    "faq_a5": "Presencial en Madrid o por videollamada, según tu preferencia y tu lugar de residencia. También puedes alternar ambos formatos.",
+    "faq_q6": "No vivo en España, ¿es un problema?",
+    "faq_a6": "No, el acompañamiento a distancia funciona igual de bien que el presencial, solo hay que tener en cuenta la diferencia horaria para organizar las sesiones.",
+    "faq_q7": "¿En qué idiomas se realizan las sesiones?",
+    "faq_a7": "En español, en francés o en inglés, según la demanda.",
+    "faq_q8": "¿En cuánto tiempo tendré una respuesta?",
+    "faq_a8": "Respondo a cada solicitud en un plazo de 48h laborables para acordar juntas una primera llamada.",
+    "faq_q9": "¿Cómo funciona el pago?",
+    "faq_a9": "Por transferencia bancaria o PayPal, a abonar al menos 24h antes de cada sesión para confirmarla. Los datos bancarios se envían después de tu solicitud.",
 
     "cta_title": "¿Te apetece hablarlo?",
     "cta_button": "HABLEMOS"
@@ -409,7 +418,7 @@
     "wa_eyebrow": "WhatsApp",
     "wa_text": "Escríbeme directamente y te responderé en cuanto pueda.",
     "wa_button": "Enviar un mensaje de WhatsApp",
-    "wa_link": "https://wa.me/34622229689?text=Hola%20Pilar%2C%20me%20gustar%C3%ADa%20hacerte%20una%20consulta.",
+    "wa_link": "https://wa.me/33767333616?text=Hola%20Pilar%2C%20me%20gustar%C3%ADa%20hacerte%20una%20consulta.",
 
 
     "form_prenom": "Nombre",
@@ -440,20 +449,8 @@
     "infos_instagram_label": "Instagram",
 
     "reassurance1": "Primera llamada gratuita, sin compromiso",
-    "reassurance2": "Respuesta en 48h",
+    "reassurance2": "Respuesta en 48h"
 
-    "faq_eyebrow": "FAQ",
-    "faq_title": "Sobre los aspectos prácticos",
-    "faq_q1": "¿Las sesiones son presenciales o por videollamada?",
-    "faq_a1": "Presencial en Madrid o por videollamada, según tu preferencia y tu lugar de residencia. También puedes alternar ambos formatos.",
-    "faq_q2": "No vivo en España, ¿es un problema?",
-    "faq_a2": "No, el acompañamiento a distancia funciona igual de bien que el presencial, solo hay que tener en cuenta la diferencia horaria para organizar las sesiones.",
-    "faq_q3": "¿En qué idiomas se realizan las sesiones?",
-    "faq_a3": "En español, en francés o en inglés, según la demanda.",
-    "faq_q4": "¿En cuánto tiempo tendré una respuesta?",
-    "faq_a4": "Respondo a cada solicitud en un plazo de 48h laborables para acordar juntas una primera llamada.",
-    "faq_q5": "¿Cómo funciona el pago?",
-    "faq_a5": "Por transferencia bancaria o PayPal, a abonar al menos 24h antes de cada sesión para confirmarla. Los datos bancarios se envían después de tu solicitud."
   },
 
   "merci": {
