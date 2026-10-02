@@ -6,7 +6,7 @@
 (function () {
   // Hostinger's CDN caches static files for 7 days — bump this on every
   // content change so lang/*.json is fetched fresh instead of from cache.
-  const ASSET_VERSION = '24';
+  const ASSET_VERSION = '27';
   const STORAGE_KEY = 'camino_lang';
   const DEFAULT_LANG = 'es';
   // Add 'en' here once its lang/en.json file is translated — that alone
@@ -42,6 +42,10 @@
     document.querySelectorAll('[data-i18n-title]').forEach(el => {
       const value = getValue(dict, el.getAttribute('data-i18n-title'));
       if (value !== undefined) el.setAttribute('title', value);
+    });
+    document.querySelectorAll('[data-i18n-href]').forEach(el => {
+      const value = getValue(dict, el.getAttribute('data-i18n-href'));
+      if (value !== undefined) el.setAttribute('href', value);
     });
     document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
       const value = getValue(dict, el.getAttribute('data-i18n-placeholder'));

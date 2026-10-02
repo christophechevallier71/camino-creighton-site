@@ -58,8 +58,9 @@ img{max-width:100%;}
 .faq-answer[hidden]{display:none;}
 
 /* ---- Header / nav ---- */
-.site-header{width:100%;display:flex;align-items:center;justify-content:space-between;padding:22px 56px;background:var(--cream);border-bottom:1px solid rgba(122,147,164,0.2);position:sticky;top:0;z-index:100;}
-.nav-links{display:flex;align-items:center;gap:40px;}
+.site-header{width:100%;display:flex;align-items:center;justify-content:space-between;padding:22px 40px;background:var(--cream);border-bottom:1px solid rgba(122,147,164,0.2);position:sticky;top:0;z-index:100;}
+.nav-links{display:flex;align-items:center;gap:clamp(20px,2.2vw,40px);}
+.nav-links a,.header-cta-desktop{white-space:nowrap;}
 .nav-links a{font-size:16px;color:var(--ink);}
 .nav-links a.active{color:var(--primary);border-bottom:1px solid var(--primary);padding-bottom:2px;}
 .nav-disabled{font-size:16px;color:var(--ink-soft);opacity:0.4;cursor:default;user-select:none;}
@@ -131,14 +132,10 @@ input, select, textarea{width:100%; padding:13px 14px; border:1px solid var(--bl
 input:focus, select:focus, textarea:focus{outline:none; border-color:var(--primary);}
 .field{display:flex; flex-direction:column; gap:0; margin-bottom:20px;}
 
-/* ---- Contact path selector ---- */
-.path-btn{display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;padding:28px 24px;background:var(--white);border:2px solid var(--blush);border-radius:2px;cursor:pointer;font-family:'Jost',sans-serif;width:100%;}
-.path-btn.active{border-color:var(--primary);}
-.path-btn h3{font-size:18px;color:var(--ink);}
-.path-btn p{font-size:13px;color:var(--ink-soft);}
-.path-btn svg{display:block;}
-.contact-form{display:none;}
-.contact-form.active{display:flex;flex-direction:column;}
+/* ---- Contact : choix reserver / question ---- */
+.mode-btn{display:flex;align-items:flex-start;gap:12px;width:100%;padding:16px 18px;text-align:left;background:var(--white);border:2px solid var(--blush);border-radius:2px;font-family:'Jost',sans-serif;cursor:pointer;}
+.mode-btn.active{border-color:var(--primary);}
+[data-mode-panel][hidden]{display:none;}
 
 /* ---- Cotignac : buzón de San José ---- */
 .check{display:flex;align-items:flex-start;gap:10px;margin-bottom:0;font-size:13.5px;letter-spacing:0;text-transform:none;color:var(--ink-soft);cursor:pointer;}

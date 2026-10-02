@@ -42,29 +42,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Contact page: path selector (Réserver une séance vs Poser une question)
-  const pathReserver = document.getElementById('path-reserver');
-  const pathQuestion = document.getElementById('path-question');
-  const formReserver = document.getElementById('form-reserver');
-  const formQuestion = document.getElementById('form-question');
-  if (pathReserver && pathQuestion && formReserver && formQuestion) {
+  // Contact page: one form, two modes (reserve a session / ask a question)
+  const contactForm = document.getElementById('form-contact');
+  if (contactForm) {
+    const typeInput = contactForm.querySelector('input[name="type"]');
+    const modeButtons = contactForm.querySelectorAll('.mode-btn');
+    const panels = contactForm.querySelectorAll('[data-mode-panel]');
     const setContactMode = (mode) => {
-      const isReserver = mode !== 'question';
-      pathReserver.classList.toggle('active', isReserver);
-      pathQuestion.classList.toggle('active', !isReserver);
-      formReserver.classList.toggle('active', isReserver);
-      formQuestion.classList.toggle('active', !isReserver);
+      const m = mode === 'question' ? 'question' : 'reservation';
+      typeInput.value = m;
+      modeButtons.forEach(b => {
+        const on = b.dataset.mode === m;
+        b.classList.toggle('active', on);
+        b.setAttribute('aria-pressed', String(on));
+      });
+      panels.forEach(p => {
+        const on = p.dataset.modePanel === m;
+        p.hidden = !on;
+        p.querySelectorAll('input, select, textarea').forEach(f => { f.disabled = !on; });
+      });
     };
-    const params = new URLSearchParams(window.location.search);
-    setContactMode(params.get('mode') === 'question' ? 'question' : 'reserver');
-    pathReserver.addEventListener('click', () => setContactMode('reserver'));
-    pathQuestion.addEventListener('click', () => setContactMode('question'));
+    setContactMode(new URLSearchParams(window.location.search).get('mode') === 'question' ? 'question' : 'reservation');
+    modeButtons.forEach(b => b.addEventListener('click', () => setContactMode(b.dataset.mode)));
     document.querySelectorAll('.js-select-reserver').forEach(btn => {
-      btn.addEventListener('click', () => setContactMode('reserver'));
+      btn.addEventListener('click', () => setContactMode('reservation'));
     });
   }
-
-
   // Cotignac page: letter form (status message after buzon.php redirects back, 8 MB check, page language)
   const cartaForm = document.getElementById('form-carta');
   if (cartaForm) {

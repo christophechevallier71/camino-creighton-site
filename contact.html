@@ -15,7 +15,7 @@
 <link rel="icon" href="images/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap">
-<link rel="stylesheet" href="css/style.css?v=24">
+<link rel="stylesheet" href="css/style.css?v=27">
 </head>
 <body>
 
@@ -121,105 +121,82 @@
     </div>
   </section>
 
-  <section id="form" class="section-pad" style="padding:80px 56px 0; max-width:1200px; margin:0 auto;">
-    <div style="text-align:center; max-width:620px; margin:0 auto 40px;">
-      <span class="eyebrow" data-i18n="contact.choix_eyebrow">¿Cómo puedo ayudarte?</span>
-    </div>
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; max-width:760px; margin:0 auto;" class="field-row">
-      <button type="button" id="path-reserver" class="path-btn active">
-        <svg width="28" height="28" viewBox="0 0 100 100" fill="none" stroke="var(--primary)" stroke-width="4"><rect x="15" y="20" width="70" height="65" rx="4"></rect><path d="M15 40 L85 40"></path><path d="M30 12 L30 28"></path><path d="M70 12 L70 28"></path><circle cx="35" cy="58" r="4" fill="var(--primary)" stroke="none"></circle><circle cx="50" cy="58" r="4" fill="var(--primary)" stroke="none"></circle><circle cx="65" cy="58" r="4" fill="var(--primary)" stroke="none"></circle></svg>
-        <h3 data-i18n="contact.path_reserver_title">Reservar una sesión</h3>
-        <p data-i18n="contact.path_reserver_text">Elige un plan e indica tu disponibilidad.</p>
-      </button>
-      <button type="button" id="path-question" class="path-btn">
-        <svg width="28" height="28" viewBox="0 0 100 100" fill="none" stroke="var(--primary)" stroke-width="4"><path d="M15 25 C15 20 20 15 25 15 L75 15 C80 15 85 20 85 25 L85 60 C85 65 80 70 75 70 L40 70 L20 85 L25 70 C19 70 15 65 15 60 Z"></path></svg>
-        <h3 data-i18n="contact.path_question_title">Hacer una pregunta</h3>
-        <p data-i18n="contact.path_question_text">¿Todavía no estás lista para reservar?<br>Escríbeme o llámame, simplemente.</p>
-      </button>
-    </div>
-  </section>
+  <section id="form" class="split section-pad" style="padding:72px 56px 80px; display:grid; grid-template-columns:1.2fr 0.8fr; gap:64px; max-width:1200px; margin:0 auto;">
 
-  <section class="split section-pad" style="padding:48px 56px 80px; display:grid; grid-template-columns:1.2fr 0.8fr; gap:64px; max-width:1200px; margin:0 auto;">
-
-    <form id="form-reserver" class="contact-form active" action="contact.php" method="POST">
+    <form id="form-contact" action="contact.php" method="POST" style="display:flex; flex-direction:column;">
       <input type="hidden" name="type" value="reservation">
-      <span class="eyebrow" style="margin-bottom:8px;" data-i18n="contact.form_reserver_eyebrow">Reserva</span>
-      <h2 style="font-size:28px; margin-bottom:28px;" data-i18n="contact.form_reserver_title">¿Qué plan te interesa?</h2>
+      <h2 style="font-size:28px; margin-bottom:24px;" data-i18n="contact.form_title">Cuéntame qué necesitas</h2>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:28px;" class="field-row">
+        <button type="button" class="mode-btn active" data-mode="reservation" aria-pressed="true">
+          <svg width="24" height="24" viewBox="0 0 100 100" fill="none" stroke="var(--primary)" stroke-width="5" style="flex-shrink:0;"><rect x="15" y="20" width="70" height="65" rx="4"></rect><path d="M15 40 L85 40"></path><path d="M30 12 L30 28"></path><path d="M70 12 L70 28"></path></svg>
+          <span style="display:flex; flex-direction:column; gap:3px;"><span style="font-size:15px; font-weight:500; color:var(--ink);" data-i18n="contact.mode_reserver_title">Reservar una sesión</span><span style="font-size:12px; line-height:1.45; color:var(--ink-soft);" data-i18n="contact.mode_reserver_text">Elige un plan e indica tu disponibilidad.</span></span>
+        </button>
+        <button type="button" class="mode-btn" data-mode="question" aria-pressed="false">
+          <svg width="24" height="24" viewBox="0 0 100 100" fill="none" stroke="var(--primary)" stroke-width="5" style="flex-shrink:0;"><path d="M15 25 C15 20 20 15 25 15 L75 15 C80 15 85 20 85 25 L85 60 C85 65 80 70 75 70 L40 70 L20 85 L25 70 C19 70 15 65 15 60 Z"></path></svg>
+          <span style="display:flex; flex-direction:column; gap:3px;"><span style="font-size:15px; font-weight:500; color:var(--ink);" data-i18n="contact.mode_question_title">Hacer una pregunta</span><span style="font-size:12px; line-height:1.45; color:var(--ink-soft);" data-i18n="contact.mode_question_text">¿Aún no estás lista para reservar? Escríbeme, simplemente.</span></span>
+        </button>
+      </div>
 
       <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;" class="field-row">
         <div class="field">
-          <label for="prenom-r" data-i18n="contact.form_prenom">Nombre</label>
-          <input id="prenom-r" type="text" name="prenom" autocomplete="given-name" required>
+          <label for="prenom" data-i18n="contact.form_prenom">Nombre</label>
+          <input id="prenom" type="text" name="prenom" autocomplete="given-name" required>
         </div>
         <div class="field">
-          <label for="nom-r" data-i18n="contact.form_nom">Apellidos</label>
-          <input id="nom-r" type="text" name="nom" autocomplete="family-name" required>
+          <label for="nom" data-i18n="contact.form_nom">Apellidos</label>
+          <input id="nom" type="text" name="nom" autocomplete="family-name" required>
         </div>
       </div>
 
       <div class="field">
-        <label for="email-r" data-i18n="contact.form_email">Email</label>
-        <input id="email-r" type="email" name="email" autocomplete="email" required>
+        <label for="email" data-i18n="contact.form_email">Email</label>
+        <input id="email" type="email" name="email" autocomplete="email" required>
       </div>
 
-      <div class="field">
-        <label for="formule" data-i18n="contact.form_formule">Plan deseado</label>
-        <select id="formule" name="formule" size="5">
-          <option data-i18n="contact.form_formule_opt1">Sesión de introducción — 55 €</option>
-          <option data-i18n="contact.form_formule_opt2">Follow-up — 45 € (55 € el primero)</option>
-          <option data-i18n="contact.form_formule_opt3">Curso Completo — 455 € (410 € en pago anticipado)</option>
-          <option data-i18n="contact.form_formule_opt4">Curso Basic — 275 € (260 € en pago anticipado)</option>
-          <option data-i18n="contact.form_formule_opt5">Aún no lo sé / a discutir</option>
-        </select>
-      </div>
-
-      <div class="field">
-        <label for="modalite-r" data-i18n="contact.form_modalite">Formato preferido</label>
-        <select id="modalite-r" name="modalite">
-          <option data-i18n="contact.form_modalite_opt1">Por videollamada</option>
-          <option data-i18n="contact.form_modalite_opt2">En consulta en Madrid</option>
-          <option data-i18n="contact.form_modalite_opt3">Indiferente</option>
-        </select>
-      </div>
-
-      <div class="field">
-        <label for="dispo" data-i18n="contact.form_dispo">Tu disponibilidad (opcional)</label>
-        <textarea id="dispo" name="dispo" rows="3" data-i18n-placeholder="contact.form_dispo_placeholder" placeholder="Ej.: preferiblemente entre semana, después de las 18h..."></textarea>
-      </div>
-
-      <button type="submit" class="btn-primary" style="width:fit-content; margin-top:8px;" data-i18n="contact.form_reserver_submit">Enviar mi solicitud de reserva</button>
-    </form>
-
-    <form id="form-question" class="contact-form" action="contact.php" method="POST">
-      <input type="hidden" name="type" value="question">
-      <span class="eyebrow" style="margin-bottom:8px;" data-i18n="contact.form_question_eyebrow">Pregunta</span>
-      <h2 style="font-size:28px; margin-bottom:28px;" data-i18n="contact.form_question_title">¿Qué te gustaría saber?</h2>
-
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;" class="field-row">
+      <div data-mode-panel="reservation">
         <div class="field">
-          <label for="prenom-q" data-i18n="contact.form_prenom">Nombre</label>
-          <input id="prenom-q" type="text" name="prenom" autocomplete="given-name" required>
+          <label for="formule" data-i18n="contact.form_formule">Plan deseado</label>
+          <select id="formule" name="formule" size="5">
+            <option data-i18n="contact.form_formule_opt1">Sesión de introducción — 55 €</option>
+            <option data-i18n="contact.form_formule_opt2">Follow-up — 45 € (55 € el primero)</option>
+            <option data-i18n="contact.form_formule_opt3">Curso Completo — 455 € (410 € en pago anticipado)</option>
+            <option data-i18n="contact.form_formule_opt4">Curso Basic — 275 € (260 € en pago anticipado)</option>
+            <option data-i18n="contact.form_formule_opt5">Aún no lo sé / a discutir</option>
+          </select>
         </div>
+
         <div class="field">
-          <label for="nom-q" data-i18n="contact.form_nom">Apellidos</label>
-          <input id="nom-q" type="text" name="nom" autocomplete="family-name" required>
+          <label for="modalite" data-i18n="contact.form_modalite">Formato preferido</label>
+          <select id="modalite" name="modalite">
+            <option data-i18n="contact.form_modalite_opt1">Por videollamada</option>
+            <option data-i18n="contact.form_modalite_opt2">En consulta en Madrid</option>
+            <option data-i18n="contact.form_modalite_opt3">Indiferente</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="dispo" data-i18n="contact.form_dispo">Tu disponibilidad (opcional)</label>
+          <textarea id="dispo" name="dispo" rows="3" data-i18n-placeholder="contact.form_dispo_placeholder" placeholder="Ej.: preferiblemente entre semana, después de las 18h..."></textarea>
         </div>
       </div>
 
-      <div class="field">
-        <label for="email-q" data-i18n="contact.form_email">Email</label>
-        <input id="email-q" type="email" name="email" autocomplete="email" required>
+      <div data-mode-panel="question" hidden>
+        <div class="field">
+          <label for="message" data-i18n="contact.form_question_message">Tu pregunta</label>
+          <textarea id="message" name="message" rows="5" data-i18n-placeholder="contact.form_question_placeholder" placeholder="Escribe tu pregunta aquí..." disabled></textarea>
+        </div>
       </div>
 
-      <div class="field">
-        <label for="message-q" data-i18n="contact.form_question_message">Tu pregunta</label>
-        <textarea id="message-q" name="message" rows="5" data-i18n-placeholder="contact.form_question_placeholder" placeholder="Escribe tu pregunta aquí..."></textarea>
-      </div>
-
-      <button type="submit" class="btn-primary" style="width:fit-content; margin-top:8px;" data-i18n="contact.form_question_submit">Enviar mi pregunta</button>
+      <button type="submit" class="btn-primary" style="width:fit-content; margin-top:8px;" data-i18n="contact.form_submit">Enviar mi mensaje</button>
     </form>
 
     <div id="infos" style="display:flex; flex-direction:column; gap:28px;">
+      <div style="padding:22px 20px; background:var(--white); border:1px solid var(--blush); border-radius:2px; display:flex; flex-direction:column; gap:12px;">
+        <span class="eyebrow" data-i18n="contact.wa_eyebrow">WhatsApp</span>
+        <p style="font-size:14px; color:var(--ink-soft);" data-i18n="contact.wa_text">Escríbeme directamente y te responderé en cuanto pueda.</p>
+        <a href="https://wa.me/34622229689?text=Hola%20Pilar%2C%20me%20gustar%C3%ADa%20hacerte%20una%20consulta." data-i18n-href="contact.wa_link" target="_blank" rel="noopener" class="btn-primary" style="text-align:center; padding:14px 16px; font-size:12px;" data-i18n="contact.wa_button">Enviar un mensaje de WhatsApp</a>
+      </div>
       <div>
         <span class="eyebrow" data-i18n="contact.infos_eyebrow">Información práctica</span>
         <div style="display:flex; flex-direction:column; gap:16px; margin-top:16px;">
@@ -320,7 +297,7 @@
   <div class="footer-bottom" data-i18n="footer.copyright">© 2026 Camino Creighton — Pilar Chevallier Ramos Beytia.</div>
 </footer>
 
-<script src="js/i18n.js?v=24"></script>
-<script src="js/main.js?v=24"></script>
+<script src="js/i18n.js?v=27"></script>
+<script src="js/main.js?v=27"></script>
 </body>
 </html>
