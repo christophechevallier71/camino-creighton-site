@@ -416,6 +416,7 @@
     "form_nom": "Nom",
     "form_email": "Email",
     "form_formule": "Formule souhaitée",
+    "form_formule_placeholder": "Choisissez une formule...",
     "form_formule_opt1": "Session d'introduction — 55 €",
     "form_formule_opt2": "Follow-up — 45 € (55 € pour le 1er)",
     "form_formule_opt3": "Cours Complet — 455 € (410 € en paiement anticipé)",
