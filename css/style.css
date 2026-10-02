@@ -42,8 +42,6 @@ img{max-width:100%;}
 .placeholder-img{width:100%;aspect-ratio:4/3;border-radius:4px;background:linear-gradient(160deg, var(--blush), var(--powder));display:flex;align-items:center;justify-content:center;}
 .tag{display:inline-block;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary-dark);background:var(--cream);padding:4px 10px;border-radius:20px;font-weight:500;}
 
-.soon-ribbon{transform:rotate(-18deg);padding:14px 70px;background:rgba(122,147,164,0.55);color:rgba(255,255,255,0.95);font-size:30px;letter-spacing:0.28em;text-transform:uppercase;font-weight:500;white-space:nowrap;border-top:1px solid rgba(255,255,255,0.6);border-bottom:1px solid rgba(255,255,255,0.6);}
-@media (max-width:880px){.soon-ribbon{font-size:18px;padding:10px 24px;letter-spacing:0.2em;}}
 
 .card, .price-card, .stat-box, .book-card, .link-card{transition:transform .25s ease, box-shadow .25s ease;}
 .card:hover, .price-card:hover, .stat-box:hover, .book-card:hover, .link-card:hover{transform:translateY(-3px); box-shadow:0 14px 28px rgba(51,66,75,0.08);}
