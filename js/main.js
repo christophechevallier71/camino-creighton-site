@@ -93,6 +93,40 @@ document.addEventListener('DOMContentLoaded', () => {
       if (lang) lang.value = (document.documentElement.lang || 'es').slice(0, 2);
     });
   }
+  // Cotignac page: testimonials carousel (3 cards at a time, 1 on small screens)
+  const carousel = document.getElementById('gracias-carousel');
+  if (carousel) {
+    const track = carousel.querySelector('.car-track');
+    const cards = track.children.length;
+    const dots = document.querySelector('.car-dots');
+    let index = 0;
+    const perView = () => Math.max(1, parseInt(getComputedStyle(track).getPropertyValue('--per'), 10) || 1);
+    const positions = () => Math.max(1, cards - perView() + 1);
+    const render = () => {
+      const n = positions();
+      if (index >= n) index = n - 1;
+      track.style.setProperty('--i', index);
+      if (dots) {
+        if (dots.children.length !== n) {
+          dots.innerHTML = '';
+          for (let i = 0; i < n; i++) {
+            const d = document.createElement('button');
+            d.type = 'button'; d.className = 'car-dot'; d.setAttribute('aria-label', String(i + 1));
+            d.addEventListener('click', () => { index = i; render(); });
+            dots.appendChild(d);
+          }
+        }
+        Array.from(dots.children).forEach((d, i) => d.classList.toggle('active', i === index));
+      }
+    };
+    carousel.querySelectorAll('.car-btn').forEach(btn => btn.addEventListener('click', () => {
+      const n = positions();
+      index = (index + Number(btn.dataset.dir) + n) % n;
+      render();
+    }));
+    window.addEventListener('resize', render);
+    render();
+  }
   // Scroll-reveal: fade up each top-level section as it enters view (skip the hero)
   const sections = Array.from(document.querySelectorAll('main > section')).slice(1);
   sections.forEach(el => el.classList.add('reveal'));

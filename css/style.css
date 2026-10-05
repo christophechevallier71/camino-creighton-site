@@ -145,3 +145,23 @@ input[type="file"]{padding:14px;background:var(--cream);border:1px dashed var(--
 .form-status[hidden]{display:none;}
 .form-status.ok{background:#EAF2EE;color:#2F5D46;border:1px solid #BFD8CA;}
 .form-status.err{background:#F8ECEC;color:#8A3B3B;border:1px solid #E5C4C4;}
+
+/* ---- Cotignac : carrousel de temoignages + carte ---- */
+.car{display:flex;align-items:center;gap:20px;}
+.car-viewport{flex:1;overflow:hidden;}
+.car-track{--per:3;--i:0;display:flex;gap:24px;transform:translateX(calc(-1 * var(--i) * (100% + 24px) / var(--per)));transition:transform .45s ease;}
+.car-card{flex:0 0 calc((100% - (var(--per) - 1) * 24px) / var(--per));aspect-ratio:1/1;background:var(--cream);border:1px solid var(--blush);padding:28px 26px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center;}
+.car-text{margin:0;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16px;line-height:1.5;color:var(--ink);}
+.car-date{font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--primary-dark);font-weight:500;}
+.car-btn{flex-shrink:0;width:44px;height:44px;border-radius:50%;background:var(--white);border:1px solid var(--blush);color:var(--ink);font-size:20px;line-height:1;}
+.car-btn:hover{border-color:var(--primary);}
+.car-dots{display:flex;justify-content:center;gap:10px;margin-top:24px;}
+.car-dot{width:10px;height:10px;padding:0;border-radius:50%;border:none;background:var(--powder);cursor:pointer;}
+.car-dot.active{background:var(--primary);}
+.map-frame{margin-top:64px;border:1px solid var(--blush);border-radius:4px;overflow:hidden;background:linear-gradient(160deg,var(--blush),var(--powder));height:420px;}
+.map-legend{display:flex;justify-content:center;gap:32px;flex-wrap:wrap;margin-top:16px;font-size:13px;color:var(--ink-soft);}
+.map-legend strong{color:var(--ink);}
+@media (max-width:880px){.car-track{--per:1;}.car{gap:10px;}.car-btn{width:36px;height:36px;}.map-frame{height:320px;}.map-frame iframe{height:320px;}}
+@media (prefers-reduced-motion: reduce){.car-track{transition:none;}}
+.map-open{text-align:center;margin-top:12px;font-size:14px;}
+.map-open a{color:var(--ink);border-bottom:1px solid var(--ink);padding-bottom:2px;}

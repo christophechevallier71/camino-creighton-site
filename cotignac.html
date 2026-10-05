@@ -16,7 +16,7 @@
 <link rel="icon" href="images/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap">
-<link rel="stylesheet" href="css/style.css?v=34">
+<link rel="stylesheet" href="css/style.css?v=36">
 </head>
 <body>
 
@@ -32,7 +32,6 @@
         <a href="accompagnement.html#suivi" data-i18n="nav.accompagnement_suivi">El seguimiento</a>
         <a href="accompagnement.html#deroule" data-i18n="nav.accompagnement_deroule">Desarrollo de las sesiones</a>
         <a href="accompagnement.html#tarifs" data-i18n="nav.accompagnement_tarifs">Tarifas y planes</a>
-        <a href="accompagnement.html#temoignages" data-i18n="nav.accompagnement_temoignages">Testimonios</a>
       </div>
     </div>
     <div class="nav-item">
@@ -141,7 +140,12 @@
       </div>
     </div>
     <p style="font-size:17px; line-height:1.8; color:var(--ink-soft); max-width:760px; margin:56px auto 0; text-align:center;" data-i18n="cotignac.message">En Cotignac, María es la dispensadora de las gracias y San José el guardián de la gracia. Junto con Jesús forman la Sagrada Familia: el santuario invita sobre todo a las familias a encontrar, en la vida ordinaria y escondida de Nazaret, un modelo de santidad.</p>
-  </section>
+    <div class="map-frame">
+      <iframe title="Mapa de los dos santuarios de Cotignac" data-i18n-title="cotignac.map_title" src="https://maps.google.com/maps?saddr=Sanctuaire+Notre-Dame+de+Gr%C3%A2ces,+83570+Cotignac&amp;daddr=5248+Chemin+de+Saint-Joseph,+83570+Cotignac&amp;output=embed&amp;z=14" width="100%" height="420" style="border:0; display:block;" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="map-legend"><span><strong>A</strong> · <span data-i18n="cotignac.map_a">Santuario de Nuestra Señora de las Gracias</span></span><span><strong>B</strong> · <span data-i18n="cotignac.map_b">Santuario de San José del Bessillon</span></span></div>
+    <p class="map-open"><a href="https://www.google.com/maps/dir/?api=1&amp;origin=Sanctuaire+Notre-Dame+de+Gr%C3%A2ces+Cotignac&amp;destination=5248+Chemin+de+Saint-Joseph+83570+Cotignac" target="_blank" rel="noopener" data-i18n="cotignac.map_open">Abrir en Google Maps ↗</a></p>
+</section>
 
   <section id="porque" class="section-pad" style="background:var(--white); padding:88px 56px; border-top:1px solid rgba(122,147,164,0.2);">
     <div style="max-width:720px; margin:0 auto; text-align:center; display:flex; flex-direction:column; align-items:center; gap:18px;">
@@ -213,26 +217,65 @@
         <span class="eyebrow" data-i18n="cotignac.grace_eyebrow">Gracias recibidas</span>
         <h2 style="font-size:34px; margin-top:14px;" data-i18n="cotignac.grace_title">Han sido escuchados</h2>
       </div>
-      <div class="grid-3" style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:28px;">
-        <div class="card" style="border:1px solid var(--blush); padding:32px 28px; display:flex; flex-direction:column; gap:16px;">
-          <svg width="30" height="30" viewBox="0 0 100 100" fill="var(--primary)" opacity="0.5"><path d="M10 55 C10 30 25 18 45 15 L45 28 C33 31 28 38 28 46 L45 46 L45 85 L10 85 Z"></path><path d="M55 55 C55 30 70 18 90 15 L90 28 C78 31 73 38 73 46 L90 46 L90 85 L55 85 Z"></path></svg>
-          <span class="tag" style="width:fit-content;" data-i18n="cotignac.grace_tag">Ejemplo</span>
-          <p style="font-size:15px; line-height:1.7; color:var(--ink-soft);" data-i18n="cotignac.grace_q1">Escribí mi carta con muchas dudas, después de dos años buscando un embarazo. Unos meses más tarde supimos que esperábamos un bebé. Gracias, San José.</p>
-          <span style="font-size:13px; color:var(--ink); font-weight:500; margin-top:auto;" data-i18n="cotignac.grace_s1">— Marta, Madrid</span>
+      <div id="gracias-carousel" class="car">
+        <button type="button" class="car-btn" data-dir="-1" aria-label="Testimonio anterior" data-i18n-title="cotignac.car_prev" title="Testimonio anterior">‹</button>
+        <div class="car-viewport">
+          <div class="car-track">
+          <article class="car-card">
+            <svg width="22" height="22" viewBox="0 0 100 100" fill="var(--primary)" opacity="0.5"><path d="M10 55 C10 30 25 18 45 15 L45 28 C33 31 28 38 28 46 L45 46 L45 85 L10 85 Z"></path><path d="M55 55 C55 30 70 18 90 15 L90 28 C78 31 73 38 73 46 L90 46 L90 85 L55 85 Z"></path></svg>
+            <p class="car-text" data-i18n="cotignac.gq1">¡Hola! Los amigos que pedí añadir a la lista también están en la dulce espera. San José es tan bueno.</p>
+            <span class="car-date" data-i18n="cotignac.gd1">— Junio de 2024</span>
+          </article>
+          <article class="car-card">
+            <svg width="22" height="22" viewBox="0 0 100 100" fill="var(--primary)" opacity="0.5"><path d="M10 55 C10 30 25 18 45 15 L45 28 C33 31 28 38 28 46 L45 46 L45 85 L10 85 Z"></path><path d="M55 55 C55 30 70 18 90 15 L90 28 C78 31 73 38 73 46 L90 46 L90 85 L55 85 Z"></path></svg>
+            <p class="car-text" data-i18n="cotignac.gq2">¡Hola! Yo puse mi nombre el 7 del mes pasado, después de buscar por un año, y estoy embarazada. Gracias, gracias.</p>
+            <span class="car-date" data-i18n="cotignac.gd2">— Julio de 2024</span>
+          </article>
+          <article class="car-card">
+            <svg width="22" height="22" viewBox="0 0 100 100" fill="var(--primary)" opacity="0.5"><path d="M10 55 C10 30 25 18 45 15 L45 28 C33 31 28 38 28 46 L45 46 L45 85 L10 85 Z"></path><path d="M55 55 C55 30 70 18 90 15 L90 28 C78 31 73 38 73 46 L90 46 L90 85 L55 85 Z"></path></svg>
+            <p class="car-text" data-i18n="cotignac.gq3">Hola Pilar, bendiciones. Quiero contarte que tengo 6 semanas de embarazo. Una vez más, gracias por llevarle mi carta a San José. Después de mucho buscar, en febrero de este año quedé embarazada y tuve un aborto espontáneo (muy fuerte lo vivido). En mayo te di mi carta; llevo casi 2 años con la devoción a San José… pero cuando te di la carta tenía una certeza y esperanza de que volvería a estar. Mil gracias.</p>
+            <span class="car-date" data-i18n="cotignac.gd3">— Julio de 2024</span>
+          </article>
+          <article class="car-card">
+            <svg width="22" height="22" viewBox="0 0 100 100" fill="var(--primary)" opacity="0.5"><path d="M10 55 C10 30 25 18 45 15 L45 28 C33 31 28 38 28 46 L45 46 L45 85 L10 85 Z"></path><path d="M55 55 C55 30 70 18 90 15 L90 28 C78 31 73 38 73 46 L90 46 L90 85 L55 85 Z"></path></svg>
+            <p class="car-text" data-i18n="cotignac.gq4">Gracias a Dios estoy embarazada de siete semanas. Me apunté varias veces con mi esposo.</p>
+            <span class="car-date" data-i18n="cotignac.gd4">— Febrero de 2025</span>
+          </article>
+          <article class="car-card">
+            <svg width="22" height="22" viewBox="0 0 100 100" fill="var(--primary)" opacity="0.5"><path d="M10 55 C10 30 25 18 45 15 L45 28 C33 31 28 38 28 46 L45 46 L45 85 L10 85 Z"></path><path d="M55 55 C55 30 70 18 90 15 L90 28 C78 31 73 38 73 46 L90 46 L90 85 L55 85 Z"></path></svg>
+            <p class="car-text" data-i18n="cotignac.gq5">Llevo varios meses poniendo nuestros nombres y ¡hemos tenido positivo!</p>
+            <span class="car-date" data-i18n="cotignac.gd5">— Marzo de 2025</span>
+          </article>
+          <article class="car-card">
+            <svg width="22" height="22" viewBox="0 0 100 100" fill="var(--primary)" opacity="0.5"><path d="M10 55 C10 30 25 18 45 15 L45 28 C33 31 28 38 28 46 L45 46 L45 85 L10 85 Z"></path><path d="M55 55 C55 30 70 18 90 15 L90 28 C78 31 73 38 73 46 L90 46 L90 85 L55 85 Z"></path></svg>
+            <p class="car-text" data-i18n="cotignac.gq6">¡Una de esas cartas es la mía! Y estamos esperando a la primera niña. ¡Después de 11 años de matrimonio!</p>
+            <span class="car-date" data-i18n="cotignac.gd6">— Junio de 2025</span>
+          </article>
+          <article class="car-card">
+            <svg width="22" height="22" viewBox="0 0 100 100" fill="var(--primary)" opacity="0.5"><path d="M10 55 C10 30 25 18 45 15 L45 28 C33 31 28 38 28 46 L45 46 L45 85 L10 85 Z"></path><path d="M55 55 C55 30 70 18 90 15 L90 28 C78 31 73 38 73 46 L90 46 L90 85 L55 85 Z"></path></svg>
+            <p class="car-text" data-i18n="cotignac.gq7">Yo me apunté también y estamos a punto de ser papás. Y otra pareja a la que apunté va a acoger a un niño.</p>
+            <span class="car-date" data-i18n="cotignac.gd7">— Septiembre de 2025</span>
+          </article>
+          <article class="car-card">
+            <svg width="22" height="22" viewBox="0 0 100 100" fill="var(--primary)" opacity="0.5"><path d="M10 55 C10 30 25 18 45 15 L45 28 C33 31 28 38 28 46 L45 46 L45 85 L10 85 Z"></path><path d="M55 55 C55 30 70 18 90 15 L90 28 C78 31 73 38 73 46 L90 46 L90 85 L55 85 Z"></path></svg>
+            <p class="car-text" data-i18n="cotignac.gq8">Mi bebita nació el 2 de septiembre, gracias a Dios. Yo puse varias veces mi nombre y el de mi esposo para pedirle a San José nuestro milagrito de amor, y llegó nuestra pequeña.</p>
+            <span class="car-date" data-i18n="cotignac.gd8">— Septiembre de 2025</span>
+          </article>
+          <article class="car-card">
+            <svg width="22" height="22" viewBox="0 0 100 100" fill="var(--primary)" opacity="0.5"><path d="M10 55 C10 30 25 18 45 15 L45 28 C33 31 28 38 28 46 L45 46 L45 85 L10 85 Z"></path><path d="M55 55 C55 30 70 18 90 15 L90 28 C78 31 73 38 73 46 L90 46 L90 85 L55 85 Z"></path></svg>
+            <p class="car-text" data-i18n="cotignac.gq9">Creo que el mes pasado dejé mi nombre y el de mi esposo, y hoy estamos yendo al primer control del embarazo. Gracias, San José, ¡ruega por nos!</p>
+            <span class="car-date" data-i18n="cotignac.gd9">— Octubre de 2025</span>
+          </article>
+          <article class="car-card">
+            <svg width="22" height="22" viewBox="0 0 100 100" fill="var(--primary)" opacity="0.5"><path d="M10 55 C10 30 25 18 45 15 L45 28 C33 31 28 38 28 46 L45 46 L45 85 L10 85 Z"></path><path d="M55 55 C55 30 70 18 90 15 L90 28 C78 31 73 38 73 46 L90 46 L90 85 L55 85 Z"></path></svg>
+            <p class="car-text" data-i18n="cotignac.gq10">¡Gracias por compartir! Mi marido y yo estamos esperando a nuestro primer bebé, luego de que puse nuestros nombres en la cajita y recé la oración a San José de Cotignac durante un par de meses.</p>
+            <span class="car-date" data-i18n="cotignac.gd10">— Noviembre de 2025</span>
+          </article>
+          </div>
         </div>
-        <div class="card" style="border:1px solid var(--blush); padding:32px 28px; display:flex; flex-direction:column; gap:16px;">
-          <svg width="30" height="30" viewBox="0 0 100 100" fill="var(--primary)" opacity="0.5"><path d="M10 55 C10 30 25 18 45 15 L45 28 C33 31 28 38 28 46 L45 46 L45 85 L10 85 Z"></path><path d="M55 55 C55 30 70 18 90 15 L90 28 C78 31 73 38 73 46 L90 46 L90 85 L55 85 Z"></path></svg>
-          <span class="tag" style="width:fit-content;" data-i18n="cotignac.grace_tag">Ejemplo</span>
-          <p style="font-size:15px; line-height:1.7; color:var(--ink-soft);" data-i18n="cotignac.grace_q2">No esperaba nada concreto: solo quería confiarle mi preocupación por mi hijo. Recibí una paz que no sé explicar, y aquella semana todo empezó a ordenarse.</p>
-          <span style="font-size:13px; color:var(--ink); font-weight:500; margin-top:auto;" data-i18n="cotignac.grace_s2">— Lucía, Valencia</span>
-        </div>
-        <div class="card" style="border:1px solid var(--blush); padding:32px 28px; display:flex; flex-direction:column; gap:16px;">
-          <svg width="30" height="30" viewBox="0 0 100 100" fill="var(--primary)" opacity="0.5"><path d="M10 55 C10 30 25 18 45 15 L45 28 C33 31 28 38 28 46 L45 46 L45 85 L10 85 Z"></path><path d="M55 55 C55 30 70 18 90 15 L90 28 C78 31 73 38 73 46 L90 46 L90 85 L55 85 Z"></path></svg>
-          <span class="tag" style="width:fit-content;" data-i18n="cotignac.grace_tag">Ejemplo</span>
-          <p style="font-size:15px; line-height:1.7; color:var(--ink-soft);" data-i18n="cotignac.grace_q3">Mi marido llevaba un año sin trabajo. Envié la carta casi sin creer, y a las pocas semanas le ofrecieron un puesto. Nunca olvidaré ese día.</p>
-          <span style="font-size:13px; color:var(--ink); font-weight:500; margin-top:auto;" data-i18n="cotignac.grace_s3">— Javier, Sevilla</span>
-        </div>
+        <button type="button" class="car-btn" data-dir="1" aria-label="Testimonio siguiente" data-i18n-title="cotignac.car_next" title="Testimonio siguiente">›</button>
       </div>
+      <div class="car-dots" aria-hidden="true"></div>
     </div>
   </section>
   <section style="padding:88px 56px; text-align:center;">
@@ -277,7 +320,7 @@
   <div class="footer-bottom" data-i18n="footer.copyright">© 2026 Camino Creighton — Pilar Chevallier Ramos Beytia.</div>
 </footer>
 
-<script src="js/i18n.js?v=34"></script>
-<script src="js/main.js?v=34"></script>
+<script src="js/i18n.js?v=36"></script>
+<script src="js/main.js?v=36"></script>
 </body>
 </html>
