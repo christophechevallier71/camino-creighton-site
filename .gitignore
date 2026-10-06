@@ -14,6 +14,7 @@
 !/apropos.html
 !/ressources.html
 !/cotignac.html
+!/404.html
 !/mentions-legales.html
 !/confidentialite.html
 !/contact.html
@@ -36,6 +37,9 @@
 
 !/images/
 !/images/**
+
+!/fonts/
+!/fonts/**
 
 # Working files kept next to the site images but not part of the site:
 # inspiration folder, heavy original photos, and the "… - style hero" copies

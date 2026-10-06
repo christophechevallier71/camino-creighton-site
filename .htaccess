@@ -7,3 +7,6 @@ RewriteRule ^(.*)$ https://caminocreighton.com/$1 [L,R=301]
 # Redirect /index.html to / (avoids a duplicate of the homepage)
 RewriteCond %{THE_REQUEST} /index\.html[\s?] [NC]
 RewriteRule ^index\.html$ / [L,R=301]
+
+# Friendly 404 page
+ErrorDocument 404 /404.html
