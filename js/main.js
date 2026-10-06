@@ -127,6 +127,18 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('resize', render);
     render();
   }
+  // Cotignac page: the Google map only loads (and Google only sees the visitor) after a click
+  const mapFrame = document.getElementById('map-frame');
+  const mapBtn = document.getElementById('map-load');
+  if (mapFrame && mapBtn) {
+    mapBtn.addEventListener('click', () => {
+      const f = document.createElement('iframe');
+      f.src = mapFrame.dataset.src; f.title = mapFrame.dataset.title || '';
+      f.width = '100%'; f.height = '420'; f.style.cssText = 'border:0;display:block;';
+      f.setAttribute('allowfullscreen', ''); f.referrerPolicy = 'no-referrer-when-downgrade';
+      mapFrame.innerHTML = ''; mapFrame.appendChild(f);
+    });
+  }
   // Scroll-reveal: fade up each top-level section as it enters view (skip the hero)
   const sections = Array.from(document.querySelectorAll('main > section')).slice(1);
   sections.forEach(el => el.classList.add('reveal'));

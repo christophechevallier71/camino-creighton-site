@@ -14,6 +14,10 @@
     "ressources_description": "Articles, livres recommandés et liens utiles autour de la méthode Creighton, la fertilité naturelle et la santé hormonale.",
     "cotignac_title": "Cotignac | Camino Creighton",
     "cotignac_description": "Boîte à lettres de saint Joseph : envoyez votre lettre à saint Joseph de Cotignac. Pilar se rend chaque année à Cotignac et dépose personnellement les lettres reçues.",
+    "mentions_title": "Mentions légales | Camino Creighton",
+    "mentions_description": "Mentions légales de caminocreighton.com : éditrice du site, conditions d'utilisation, propriété intellectuelle et programme d'affiliation.",
+    "confidentialite_title": "Politique de confidentialité | Camino Creighton",
+    "confidentialite_description": "Politique de confidentialité de caminocreighton.com : quelles données sont traitées, pourquoi, vos droits et les services tiers.",
     "merci_title": "Merci | Camino Creighton"
   },
 
@@ -389,6 +393,7 @@
     "mode_question_title": "Poser une question",
     "mode_question_text": "Pas encore prête à réserver ? Écrivez-moi, tout simplement.",
     "form_submit": "Envoyer mon message",
+    "form_privacy": "En envoyant ce formulaire, vous acceptez que je traite vos données pour vous répondre, conformément à la <a href=\"confidentialite.html\">politique de confidentialité</a>.",
     "wa_eyebrow": "WhatsApp",
     "wa_text": "Écrivez-moi directement, je vous répondrai dès que possible.",
     "wa_button": "Envoyer un message WhatsApp",
@@ -460,7 +465,7 @@
     "form_letter_ph": "Écrivez ici votre lettre ou votre intention...",
     "form_file": "Ou joignez votre lettre",
     "form_file_hint": "PDF, Word ou image · 8 Mo maximum",
-    "form_consent": "J'accepte que Pilar reçoive ma lettre par e-mail.",
+    "form_consent": "J'accepte que Pilar reçoive ma lettre par e-mail et traite mes données, y compris celles que j'y mentionne, conformément à la <a href=\"confidentialite.html\">politique de confidentialité</a>.",
     "form_submit": "Déposer ma lettre",
     "status_ok": "Merci. Votre lettre est bien arrivée dans la boîte mail de Pilar.",
     "status_error": "Nous n'avons pas pu envoyer votre lettre. Réessayez ou écrivez à pilar.fertilitycare@gmail.com.",
@@ -500,7 +505,13 @@
     "map_a": "Sanctuaire Notre-Dame de Grâces",
     "map_b": "Sanctuaire Saint-Joseph du Bessillon",
     "map_open": "Ouvrir dans Google Maps ↗",
+    "map_load_text": "Pour afficher la carte, Google chargera du contenu depuis ses serveurs et peut déposer des cookies. Plus d'informations dans la <a href=\"confidentialite.html\">politique de confidentialité</a>.",
+    "map_load_btn": "Charger la carte",
     "car_prev": "Témoignage précédent",
     "car_next": "Témoignage suivant"
+  },
+  "legal": {
+    "mentions_title": "Mentions légales",
+    "confidentialite_title": "Politique de confidentialité"
   }
 }

@@ -15,7 +15,7 @@
 <link rel="icon" href="images/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap">
-<link rel="stylesheet" href="css/style.css?v=42">
+<link rel="stylesheet" href="css/style.css?v=44">
 </head>
 <body>
 
@@ -139,8 +139,8 @@
       </div>
     </div>
     <p style="font-size:17px; line-height:1.8; color:var(--ink-soft); max-width:760px; margin:56px auto 0; text-align:center;" data-i18n="cotignac.message">En Cotignac, María es la dispensadora de las gracias y San José el guardián de la gracia. Junto con Jesús forman la Sagrada Familia: el santuario invita sobre todo a las familias a encontrar, en la vida ordinaria y escondida de Nazaret, un modelo de santidad.</p>
-    <div class="map-frame">
-      <iframe title="Mapa de los dos santuarios de Cotignac" data-i18n-title="cotignac.map_title" src="https://maps.google.com/maps?saddr=Sanctuaire+Notre-Dame+de+Gr%C3%A2ces,+83570+Cotignac&amp;daddr=5248+Chemin+de+Saint-Joseph,+83570+Cotignac&amp;output=embed&amp;z=14" width="100%" height="420" style="border:0; display:block;" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="map-frame" id="map-frame" data-src="https://maps.google.com/maps?saddr=Sanctuaire+Notre-Dame+de+Gr%C3%A2ces,+83570+Cotignac&amp;daddr=5248+Chemin+de+Saint-Joseph,+83570+Cotignac&amp;output=embed&amp;z=14" data-title="Mapa de los dos santuarios de Cotignac">
+      <div class="map-consent"><p data-i18n="cotignac.map_load_text">Para mostrar el mapa, Google cargará contenido desde sus servidores y puede instalar cookies. Más información en la <a href="confidentialite.html">política de privacidad</a>.</p><button type="button" class="btn-primary" id="map-load" data-i18n="cotignac.map_load_btn">Cargar el mapa</button></div>
     </div>
     <div class="map-legend"><span><strong>A</strong> · <span data-i18n="cotignac.map_a">Santuario de Nuestra Señora de las Gracias</span></span><span><strong>B</strong> · <span data-i18n="cotignac.map_b">Santuario de San José del Bessillon</span></span></div>
     <p class="map-open"><a href="https://www.google.com/maps/dir/?api=1&amp;origin=Sanctuaire+Notre-Dame+de+Gr%C3%A2ces+Cotignac&amp;destination=5248+Chemin+de+Saint-Joseph+83570+Cotignac" target="_blank" rel="noopener" data-i18n="cotignac.map_open">Abrir en Google Maps ↗</a></p>
@@ -181,7 +181,7 @@
           <p class="file-hint" data-i18n="cotignac.form_file_hint">PDF, Word o imagen · 8 MB como máximo</p>
         </div>
         <div class="hp-field" aria-hidden="true"><label for="carta-web">Web</label><input id="carta-web" type="text" name="website" tabindex="-1" autocomplete="off"></div>
-        <label class="check" for="carta-ok"><input id="carta-ok" type="checkbox" name="consentement" value="1" required><span data-i18n="cotignac.form_consent">Acepto que Pilar reciba mi carta por correo electrónico.</span></label>
+        <label class="check" for="carta-ok"><input id="carta-ok" type="checkbox" name="consentement" value="1" required><span data-i18n="cotignac.form_consent">Acepto que Pilar reciba mi carta por correo electrónico y trate mis datos, incluidos los que yo mencione en ella, según la <a href="confidentialite.html">política de privacidad</a>.</span></label>
         <div style="text-align:center; margin-top:24px;"><button type="submit" class="btn-primary" data-i18n="cotignac.form_submit">Depositar mi carta</button></div>
         <p class="form-status ok" role="status" data-carta-msg="ok" data-i18n="cotignac.status_ok" hidden>Gracias. Tu carta ha llegado al correo de Pilar.</p>
         <p class="form-status err" role="alert" data-carta-msg="error" data-i18n="cotignac.status_error" hidden>No hemos podido enviar tu carta. Inténtalo de nuevo o escribe a pilar.fertilitycare@gmail.com.</p>
@@ -305,8 +305,8 @@
       <h4 data-i18n="footer.info_heading">Información</h4>
       <a href="ressources.html#faq" data-i18n="footer.faq_link">Preguntas frecuentes</a>
       <a href="contact.html?mode=reserver" data-i18n="footer.rdv_link">Reservar cita</a>
-      <a href="#" data-i18n="footer.mentions">Aviso legal</a>
-      <a href="#" data-i18n="footer.confidentialite">Política de privacidad</a>
+      <a href="mentions-legales.html" data-i18n="footer.mentions">Aviso legal</a>
+      <a href="confidentialite.html" data-i18n="footer.confidentialite">Política de privacidad</a>
     </div>
     <div class="footer-col">
       <h4 data-i18n="footer.contact_heading">Contacto</h4>
@@ -319,7 +319,7 @@
   <div class="footer-bottom" data-i18n="footer.copyright">© 2026 Camino Creighton — Pilar Chevallier Ramos Beytia.</div>
 </footer>
 
-<script src="js/i18n.js?v=42"></script>
-<script src="js/main.js?v=42"></script>
+<script src="js/i18n.js?v=44"></script>
+<script src="js/main.js?v=44"></script>
 </body>
 </html>

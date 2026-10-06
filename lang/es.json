@@ -14,6 +14,10 @@
     "ressources_description": "Artículos, libros recomendados y enlaces útiles sobre el método Creighton, la fertilidad natural y la salud hormonal.",
     "cotignac_title": "Cotignac | Camino Creighton",
     "cotignac_description": "Buzón de San José: envía tu carta a San José de Cotignac. Pilar viaja cada año a Cotignac y deposita personalmente las cartas recibidas.",
+    "mentions_title": "Aviso legal | Camino Creighton",
+    "mentions_description": "Aviso legal de caminocreighton.com: titular del sitio, condiciones de uso, propiedad intelectual y programa de afiliados.",
+    "confidentialite_title": "Política de privacidad | Camino Creighton",
+    "confidentialite_description": "Política de privacidad de caminocreighton.com: qué datos se tratan, para qué, tus derechos y los servicios de terceros.",
     "merci_title": "Gracias | Camino Creighton"
   },
 
@@ -389,6 +393,7 @@
     "mode_question_title": "Hacer una pregunta",
     "mode_question_text": "¿Aún no estás lista para reservar? Escríbeme, simplemente.",
     "form_submit": "Enviar mi mensaje",
+    "form_privacy": "Al enviar este formulario, aceptas que trate tus datos para responderte, según la <a href=\"confidentialite.html\">política de privacidad</a>.",
     "wa_eyebrow": "WhatsApp",
     "wa_text": "Escríbeme directamente y te responderé en cuanto pueda.",
     "wa_button": "Enviar un mensaje de WhatsApp",
@@ -460,7 +465,7 @@
     "form_letter_ph": "Escribe aquí tu carta o tu intención...",
     "form_file": "O adjunta tu carta",
     "form_file_hint": "PDF, Word o imagen · 8 MB como máximo",
-    "form_consent": "Acepto que Pilar reciba mi carta por correo electrónico.",
+    "form_consent": "Acepto que Pilar reciba mi carta por correo electrónico y trate mis datos, incluidos los que yo mencione en ella, según la <a href=\"confidentialite.html\">política de privacidad</a>.",
     "form_submit": "Depositar mi carta",
     "status_ok": "Gracias. Tu carta ha llegado al correo de Pilar.",
     "status_error": "No hemos podido enviar tu carta. Inténtalo de nuevo o escribe a pilar.fertilitycare@gmail.com.",
@@ -500,7 +505,13 @@
     "map_a": "Santuario de Nuestra Señora de las Gracias",
     "map_b": "Santuario de San José del Bessillon",
     "map_open": "Abrir en Google Maps ↗",
+    "map_load_text": "Para mostrar el mapa, Google cargará contenido desde sus servidores y puede instalar cookies. Más información en la <a href=\"confidentialite.html\">política de privacidad</a>.",
+    "map_load_btn": "Cargar el mapa",
     "car_prev": "Testimonio anterior",
     "car_next": "Testimonio siguiente"
+  },
+  "legal": {
+    "mentions_title": "Aviso legal",
+    "confidentialite_title": "Política de privacidad"
   }
 }
