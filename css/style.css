@@ -191,3 +191,6 @@ html:not([lang="fr"]) .legal-fr{display:none;}
 .map-consent a,.form-note a{color:var(--primary-dark);border-bottom:1px solid var(--primary-dark);}
 .form-note{margin-top:14px;font-size:12.5px;line-height:1.6;color:var(--ink-soft);}
 .consent a,label.check a{color:var(--primary-dark);border-bottom:1px solid var(--primary-dark);}
+
+.price-nonrefund{width:calc(50% - 10px);margin:20px 0 0 auto;text-align:center;font-size:15px;font-style:italic;color:var(--ink-soft);}
+@media (max-width:900px){.price-nonrefund{width:auto;margin:20px 0 0;}}
